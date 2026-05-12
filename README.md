@@ -1,2 +1,1 @@
-COMO Q FAZ PRA FICAR ATUALIZANDO AUTOMATICOOOOOO????????
-asdasdasdasd
+asdauishdauishd
