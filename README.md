@@ -18,3 +18,4 @@ Ativar modo leitura simples (esconde banners, deixa só texto).
 Atalhos de Teclado
 Ex.: Alt + 1 vai para o menu, Alt + 2 para o conteúdo, Alt + 3 para o rodapé.
 Botões para navegar manualmente.
+asdasdasd
