@@ -104,7 +104,7 @@ nav{
 .container2 {
     display: flex;
     justify-content: center; /* centraliza horizontal */
-    margin-top: 100px; /* afasta da navbar */
+    margin-top: 300px; /* afasta da navbar */
     gap: 40px;
 }
 
@@ -125,7 +125,7 @@ nav{
 }
 
 .card:hover .content {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) scale(1.2);
 }
 
 .front,
@@ -134,7 +134,7 @@ nav{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
