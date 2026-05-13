@@ -1,12 +1,13 @@
 Viniccius 13
 
 Lista de coisas pra botar que sao faceis de fazer:
-Animações e Transições
-Usar JS + CSS ou bibliotecas como AOS, GSAP.
-Dark Mode / Light Mode
-Ativar alto contraste.
-Mensagens de erro em tempo real com ícones ou cores.
-Leitura de Texto em Voz Alta (depende de quantos textos)
+
+-Animações e Transições
+-Usar JS + CSS ou bibliotecas como AOS, GSAP.
+-Dark Mode / Light Mode
+-Ativar alto contraste.
+-Mensagens de erro em tempo real com ícones ou cores.
+-Leitura de Texto em Voz Alta (depende de quantos textos)
 (se fizer carrinho)
 (Mostrar quantidade de produtos no ícone do carrinho.)
 (Permitir adicionar/remover itens e calcular total.)

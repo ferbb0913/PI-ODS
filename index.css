@@ -1,0 +1,284 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: #66e8ff;
+   background: radial-gradient(circle, rgba(102, 232, 255, 1) 0%,
+ rgba(207, 255, 240, 1) 100%);
+   margin: 0;
+   padding: 0;
+}
+
+header{
+
+    position: relative;
+    background: #75d1d1;
+    z-index: 10;
+    background: linear-gradient(0deg, #75d1d1 0%, #00a5c2 18%, #6af7f0 100%);
+    height: 60px;
+}
+
+
+.container{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row ;
+    padding: 15px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+.header2{
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    color: #A9D5CA;
+}
+.header2 div {
+    color: #A9D5CA;
+    cursor: pointer;
+}
+.header1{
+    margin-right: auto;
+    text-align: left;
+    color: #ffffff;
+}
+
+
+
+  
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+
+nav{
+     position: relative;
+     height: 100px;
+}
+
+
+
+.video{
+    margin-top: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.header2 .home{
+    color:#2f6558;
+}
+/*-------------------------Carrossel--------------------------------------------*/
+
+
+
+.caroulsel {
+  position: absolute;
+ 
+ 
+
+  width: 100%;
+  display: flex;
+  
+  overflow-x: auto;
+
+ 
+
+gap: 0,5;
+  
+  scrollbar-width: none;
+}
+
+.caroulsel::-webkit-scrollbar {
+  display: none;
+}
+
+.group{
+
+   
+    display: flex;
+    align-items: center;
+
+    animation: spin 30s infinite linear;
+    
+}
+.card img{
+
+
+    width: 100%;
+    height: 100%;
+}
+.card {
+    flex: 0 0 1900px; 
+    height: 500px;
+   
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
+}
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+
+
+
+
+
+/*-------------------------DARK-MODE--------------------------------------------*/
+
+
+body.dark {
+  background: radial-gradient(circle,
+    #0399b7 0%,
+    #0e5560 100%);
+}
+
+body.dark a {
+    color: #00ffbf;
+}
+
+body.dark .home {
+    color: #ffffff;
+}
+
+
+
+
+
+
+.dark header{
+
+
+    background: #75D1D1;
+background: linear-gradient(0deg, rgba(117, 209, 209, 1) 0%, rgba(0, 93, 110, 1) 18%, rgba(115, 209, 204, 1) 100%);
+}
+.peixe{
+
+    cursor: pointer;
+}
+
+
+
+
+/*--------------------footer----------------------*/
+
+
+.footer {
+  margin-top: 300px;
+  background: #1b8d8f;
+  background: linear-gradient(0deg, rgba(27, 141, 143, 1) 0%, rgba(189, 255, 232, 1) 0%, rgba(71, 209, 195, 1) 27%, rgb(68, 166, 169) 100%);
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark .footer {
+    color: #005160;
+   background: #30dbdb;
+  background: linear-gradient(0deg, rgba(48, 219, 219, 1) 0%,
+ rgba(255, 255, 255, 1) 0%, rgba(32, 227, 204, 1) 27%
+ , rgb(28, 69, 71) 100%);
+}
+
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.footer-section {
+ 
+  margin: 10px 0;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  
+}
+
+.footer-section a {
+ 
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: rgb(0, 221, 255);
+}
+
+
+
+.footer-bottom {
+     
+  text-align: center;
+  border-top: 1px solid rgb(0, 56, 58);
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+
+
+
+/*-------------------------section--------------------------------------------*/
+
+
+
+section {
+    width: 80%;
+    margin: 300px auto ;
+    height: auto;
+   
+    background: #22C1C3;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(222, 251, 255, 1) 75%, rgba(0, 221, 255, 1) 100%);text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+h1{
+
+     margin-top: 20px;
+   
+    color:#005160 ;
+}
+
+section a {
+    
+
+    margin-right: 50px;
+    color: rgb(11, 50, 71);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+section img{
+
+margin-bottom: 30px;
+margin-top: 70px;
+}
