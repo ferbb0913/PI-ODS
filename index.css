@@ -394,7 +394,13 @@ section {
     height: auto;
    
     background: #22C1C3;
-    background: linear-gradient(0deg, #22c1c3 0%, rgba(222, 251, 255, 1) 75%, rgba(0, 221, 255, 1) 100%);text-align: center;
+    box-shadow: #132b25 3px 1px 4px;
+    background: #1b9296;
+     background: linear-gradient(0deg, rgba(27, 146, 150, 1) 0%, rgba(69, 245, 236, 1) 83%, rgba(179, 255, 255, 1) 97%, rgba(168, 255, 255, 1) 96%);
+     color: #005160;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
     padding-top: 20px;
     padding-bottom: 50px;
     border-radius: 10px;
@@ -448,3 +454,13 @@ margin-top: 70px;
  .dark .botao-pix:hover {
 
  box-shadow: #021215a9 3px 8px 15px;}
+
+
+
+
+
+
+
+
+
+ /*-------------------------carrossel2--------------------------------------------*/
