@@ -215,24 +215,28 @@ a {
 /*-------------------------carrossel--------------------------------------------*/
 
  .carrossel{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    box-shadow: #005160 1px 5px 8px;
+    
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: #005160 1px 5px 8px;
  }
 
 .imgs{
-    display: flex;
-    transition: 0.5s;
+  margin-top: 0;
+  display: flex;
+  transition: 0.5s;
 }
 
 .slide{
-    min-width: 100%;
+  min-width: 100%;
+  
 }
 
 .slide img{
-    width: 100%;
-    display: block;
+  margin-top: 0;
+  width: 100%;
+  display: block;
 }
 
 .anterior,
@@ -386,16 +390,16 @@ section {
     width: 80%;
     margin: 300px auto ;
     height: auto;
-   
+    
     background: #22C1C3;
     box-shadow: #132b25 3px 1px 4px;
     background: #1b9296;
-     background: linear-gradient(0deg, rgba(27, 146, 150, 1) 0%, rgba(69, 245, 236, 1) 83%, rgba(179, 255, 255, 1) 97%, rgba(168, 255, 255, 1) 96%);
-     color: #005160;
-     display: flex;
-     flex-direction: column;
+    background: linear-gradient(0deg, rgba(27, 146, 150, 1) 0%, rgba(69, 245, 236, 1) 83%, rgba(179, 255, 255, 1) 97%, rgba(168, 255, 255, 1) 96%);
+    color: #005160;
+    display: flex;
+    flex-direction: column;
      align-items: center;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 50px;
     border-radius: 10px;
     overflow: hidden;
@@ -419,7 +423,7 @@ section a {
 section img{
 
 margin-bottom: 30px;
-margin-top: 70px;
+margin-top: 0px;
 }
 
 
@@ -469,14 +473,14 @@ margin-top: 70px;
   position: relative;
  
   width: 100%;
-  margin: 0 auto; /* centraliza */
+  margin: 0 auto; 
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   overflow-x: auto;
-  gap: 0.5rem;
+  
 
   scrollbar-width: none;
 
@@ -508,7 +512,7 @@ margin-top: 70px;
   align-items: center;
   gap: 0.5rem;
 
-  animation: spin 30s linear infinite;
+  animation: spin 10s linear infinite;
 }
 
 .card {
