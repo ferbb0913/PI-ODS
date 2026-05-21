@@ -512,7 +512,7 @@ margin-top: 0px;
   align-items: center;
   gap: 0.5rem;
 
-  animation: spin 10s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 .card {
@@ -541,6 +541,6 @@ background: linear-gradient(0deg, rgba(186, 250, 255, 1) 1%, rgba(37, 207, 230, 
   }
 
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
