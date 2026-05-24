@@ -29,11 +29,11 @@
 
 header {
 
-
+  margin-bottom: 200px;
   position: fixed;
   
   top: 0;
-  z-index: 9999;
+  z-index: 100;
 }
 .navbar{
   position: sticky;
@@ -425,36 +425,108 @@ color: #2200ff;
 
 
 
+form{
+  
+  border: 2px solid #03849e7b;
+  width: 30%;
+  margin: 95px auto 30px auto;
+  border-radius: 10px;
+    box-shadow: 0 4px 7px rgba(1, 106, 106, 0.618);
+}
 
-.pai 
-{   
-    margin-top: 600px;
-    margin-bottom: 200px;
+fieldset{
+  
+  border: none;
+  padding: 20px;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+    color: #ffffff;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #3d33ff;
+}
+
+
+form h1{
+  color: #ffffff ;
+  -webkit-text-stroke: 1px #429aab9b;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.803);
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+.alinhamento {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+input[type="submit"] {
+    background: #8cffff;
+    background: linear-gradient(0deg, rgba(140, 255, 255, 1) 0%, rgba(58, 237, 240, 1) 4%, rgba(44, 133, 248, 1) 85%, rgba(168, 203, 255, 1) 100%);
+    color: white;
+    
+    padding: 15px 5px;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.form
-{
-
-
-padding-top: 40px;
-color: #05197a;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 50px;
-text-align: center;
-width: 500px;
-height: 600px;
-background: linear-gradient(to bottom, #00a6ff, #01cbd6);
-border-radius: 10px;
-
-
-
+input[type="submit"]:hover {
+  transform: scale(1.05);
+   box-shadow: 0 4px 5px rgba(1, 106, 106, 0.618);
 }
 
-.form input {
+placeholder {
+    color: #ffffff;
+    opacity: 1; 
+}
 
-    font-size: 20px;
-    width: 400px;
-    height: 50px;
+label {
+     color: #ffffff ;
+    
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.803);
+    font-weight: bold;
+}
+
+input[type="email"] {
+    border: none;
+    background: none;
+    color: #ffffff;
+    border-bottom: 2px solid #03849e7b;
+}
+
+input[type="text"] {
+    border: none;
+    color: #ffffff; 
+    background: none;
+    border-bottom: 2px solid #03849e7b;
+}
+
+input[type="number"] {
+
+    border: none;
+    background: none;
+    color: #ffffff;
+    border-bottom: 2px solid #03849e7b;
+}
+
+input[type="date"] {
+    color: #ffffff;
+    border: none;
+    background: none;
+    
 }
