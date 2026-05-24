@@ -426,12 +426,15 @@ color: #2200ff;
 
 
 form{
-  
+ 
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: linear-gradient(to bottom, #30dff7, #00d5ff);
   border: 2px solid #03849e7b;
   width: 30%;
   margin: 95px auto 30px auto;
   border-radius: 10px;
-    box-shadow: 0 4px 7px rgba(1, 106, 106, 0.618);
+  box-shadow: inset 0 4px 7px rgba(151, 255, 255, 0.847), 0 4px 5px rgba(1, 106, 106, 0.618);
+   
 }
 
 fieldset{
@@ -459,9 +462,10 @@ input:focus{
 
 
 form h1{
+
   color: #ffffff ;
   -webkit-text-stroke: 1px #429aab9b;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.803);
+  
   text-align: center;
   margin-top: 20px;
 }
@@ -477,7 +481,10 @@ input[type="submit"] {
     background: #8cffff;
     background: linear-gradient(0deg, rgba(140, 255, 255, 1) 0%, rgba(58, 237, 240, 1) 4%, rgba(44, 133, 248, 1) 85%, rgba(168, 203, 255, 1) 100%);
     color: white;
-    
+    border: none;
+    box-shadow: 0 4px 4px rgba(50, 75, 75, 0.411);
+    box-shadow: inset 0 4px 7px rgba(131, 200, 239, 0.847), 0 4px 5px rgba(1, 106, 106, 0.618);
+    border: 2px solid #00d5ff7b;
     padding: 15px 5px;
     width: 30%;
     cursor: pointer;
@@ -487,7 +494,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   transform: scale(1.05);
-   box-shadow: 0 4px 5px rgba(1, 106, 106, 0.618);
+   box-shadow: 0 2px 5px rgba(1, 106, 106, 0.618);
 }
 
 placeholder {
@@ -498,22 +505,22 @@ placeholder {
 label {
      color: #ffffff ;
     
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.803);
-    font-weight: bold;
+    
+    
 }
 
 input[type="email"] {
     border: none;
     background: none;
     color: #ffffff;
-    border-bottom: 2px solid #03849e7b;
+    border-bottom: 2px solid #d2f7ff7b;
 }
 
 input[type="text"] {
     border: none;
     color: #ffffff; 
     background: none;
-    border-bottom: 2px solid #03849e7b;
+    border-bottom: 2px solid #d2f7ff7b;
 }
 
 input[type="number"] {
@@ -521,7 +528,7 @@ input[type="number"] {
     border: none;
     background: none;
     color: #ffffff;
-    border-bottom: 2px solid #03849e7b;
+    border-bottom: 2px solid #d2f7ff7b;
 }
 
 input[type="date"] {
