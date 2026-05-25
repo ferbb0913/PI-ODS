@@ -272,8 +272,8 @@ function avancar(){
 
     pos++;
 
-    if(pos > 2){
-        pos = 0;
+    if(pos > 6){
+        pos = 6;
     }
 
     mover();
@@ -284,13 +284,13 @@ function voltar(){
     pos--;
 
     if(pos < 0){
-        pos = 2;
+        pos = 6;
     }
 
     mover();
 }
 
-setInterval(avancar, 4000);
+setInterval(avancar, 6000);
 
 
 const botao = document.getElementById("botaoTema");

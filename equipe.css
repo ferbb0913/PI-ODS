@@ -244,9 +244,6 @@ body.dark a {
     color: #00ffbf;
 }
 
-body.dark .home {
-    color: #ffffff;
-}
 
 
 .peixe{
@@ -266,14 +263,15 @@ body.dark .home {
 .dark .pai .form{
 
     background: linear-gradient(to bottom, #2f6558, #99e9d6);
-    color: #A9D5CA;
+    color: #ffffff;
 }
 
 
 
 .dark .back {
-    background: #48909b;
-    color: #99e9d6;
+  background: linear-gradient(to bottom, #48909b, #00d5ff);
+    
+    color: #ffffff;
   
 }
 
@@ -380,11 +378,17 @@ gap: 0,5;
 }
 
 .front {
-    background: #489B87;
+    background: #ff0000;
 }
 
 .back {
-    background: #c0e6dd;
+  
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(to bottom, #30dff7, #00d5ff);
+    border: 2px solid #03849e7b;
+ 
+
+    box-shadow: inset 0 4px 7px rgba(151, 255, 255, 0.847), 0 4px 5px rgba(1, 106, 106, 0.618);
     transform: rotateY(180deg);
     display: block ;
     margin-top: 10px;

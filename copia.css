@@ -51,6 +51,8 @@ header {
 }
 
 
+
+
 .navbar .nav-container li {
   list-style: none;
 }
@@ -203,68 +205,64 @@ a {
 }
 
 .video{
-    margin-top: 700px;
+    margin-top: 200px;
     justify-content: center;
     display: flex;
     align-items: center;
 }
 
 
-/*-------------------------Carrossel--------------------------------------------*/
+/*-------------------------carrossel--------------------------------------------*/
 
-
-
-.caroulsel {
-  position: absolute;
- 
- 
-
-  width: 100%;
-  display: flex;
-  
-  overflow-x: auto;
-
- 
-
-gap: 0,5;
-  
-  scrollbar-width: none;
-}
-
-.caroulsel::-webkit-scrollbar {
-  display: none;
-}
-
-.group{
-
-   
-    display: flex;
-    align-items: center;
-
-    animation: spin 30s infinite linear;
+ .carrossel{
     
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: #005160 1px 5px 8px;
+ }
+
+.imgs{
+  margin-top: 0;
+  display: flex;
+  transition: 0.5s;
 }
-.card img{
 
-
-    width: 100%;
-    height: 100%;
+.slide{
+  min-width: 100%;
+  
 }
-.card {
-    flex: 0 0 1900px; 
-    height: 500px;
-   
 
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 1.5rem;
+.slide img{
+  margin-top: 0;
+  width: 100%;
+  display: block;
 }
-@keyframes spin{
-    from {translate: 0;}
-    to {translate: -100%;}
+
+.anterior,
+.proximo{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+
+    font-size: 25px;
+    z-index: 10;
+}
+
+.anterior{
+    left: 10px;
+}
+
+.proximo{
+    right: 10px;
 }
 
 /*-------------------------DARK-MODE--------------------------------------------*/
@@ -392,16 +390,16 @@ section {
     width: 80%;
     margin: 300px auto ;
     height: auto;
-   
+    
     background: #22C1C3;
     box-shadow: #132b25 3px 1px 4px;
     background: #1b9296;
-     background: linear-gradient(0deg, rgba(27, 146, 150, 1) 0%, rgba(69, 245, 236, 1) 83%, rgba(179, 255, 255, 1) 97%, rgba(168, 255, 255, 1) 96%);
-     color: #005160;
-     display: flex;
-     flex-direction: column;
+    background: linear-gradient(0deg, rgba(27, 146, 150, 1) 0%, rgba(69, 245, 236, 1) 83%, rgba(179, 255, 255, 1) 97%, rgba(168, 255, 255, 1) 96%);
+    color: #005160;
+    display: flex;
+    flex-direction: column;
      align-items: center;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 50px;
     border-radius: 10px;
     overflow: hidden;
@@ -425,7 +423,7 @@ section a {
 section img{
 
 margin-bottom: 30px;
-margin-top: 70px;
+margin-top: 0px;
 }
 
 
@@ -464,3 +462,85 @@ margin-top: 70px;
 
 
  /*-------------------------carrossel2--------------------------------------------*/
+
+
+
+
+
+
+
+.caroulsel {
+  position: relative;
+ 
+  width: 100%;
+  margin: 0 auto; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: auto;
+  
+
+  scrollbar-width: none;
+
+
+
+
+ mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 25%,
+    rgb(38, 0, 255) 85%,
+    transparent
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+}
+
+.caroulsel::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  animation: spin 5s linear infinite;
+}
+
+.card {
+ background: #bafaff;
+background: linear-gradient(0deg, rgba(186, 250, 255, 1) 1%, rgba(37, 207, 230, 1) 6%, rgba(20, 217, 214, 1) 28%, rgba(237, 251, 255, 1) 98%, rgba(147, 245, 240, 1) 99%);
+
+  flex: 0 0 500px; /* tamanho do card */
+  height: 400px;
+  width: 400px;
+  display: flex;
+  
+  justify-content: center;
+  align-items: baseline;
+  font-size: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
