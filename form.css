@@ -427,7 +427,7 @@ color: #2200ff;
 
 form{
  
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to bottom, #30dff7, #00d5ff);
   border: 2px solid #03849e7b;
   width: 30%;
@@ -503,6 +503,7 @@ placeholder {
 }
 
 label {
+  text-shadow: 1px 1px 2px rgb(0, 56, 58);
      color: #ffffff ;
     
     
