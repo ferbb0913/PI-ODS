@@ -75,7 +75,9 @@ a:hover{
   text-shadow: 0 0 5px #ffffff,
                0 0 10px #ffffff,
                0 0 20px #ffffff;
-  transform: scale(2.0);
+               perspective: 1;
+  transform: scale(2.0) rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+
 }
 
 .secao{
