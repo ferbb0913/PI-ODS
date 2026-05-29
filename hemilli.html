@@ -61,7 +61,7 @@
  <input required type="password" name="senha" id="senha">
  </label>     
 <div class="alinhamento">
- <input required type="submit" value="Entrar" id="enviar" >
+ <input class="submit" required type="button" value="Entrar" id="enviar" onclick="passval()" >
  </div>
  
 </fieldset>
@@ -111,7 +111,18 @@
 
 
 <script>
+function passval(){
 
+if (document.getElementById("senha").value == "rightpass" && document.getElementById("nome").value == "Hemilli" ){
+window.location.href = "niver.html"
+}
+else {
+  alert ("Senha ou nome incorretos")
+  document.getElementById("senha").value = ""
+}
+  }
+
+ //&& document.getElementById("nome").value == "xXHemilliXx"
 
 const botao = document.getElementById("botaoTema");
 
