@@ -1,17 +1,10 @@
 
-    
-   html {
-  scroll-behavior: smooth;
-}
-html, body {
-  overflow-x: hidden;
-}
+
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background: #66e8ff;
-   background: radial-gradient(circle, rgba(102, 232, 255, 1) 0%,
- rgba(207, 255, 240, 1) 100%);
+   background: #ff0000;
+background: radial-gradient(circle, rgb(149, 0, 0) 0%, rgb(50, 0, 0) 100%);
    margin: 0;
    padding: 0;
 }
