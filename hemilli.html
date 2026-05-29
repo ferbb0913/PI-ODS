@@ -52,19 +52,16 @@
     <h1>Cadastre-se</h1>
     <br>
 
-     <form action="formsalvar.php" method="POST"></form>
+     
 <label for="nome">Nome:
- <input type="text" name="nome" id="nome" > 
+ <input  required type="text" name="nome" id="nome" > 
  </label> 
  <br><br>
  <label for="senha">senha:
- <input type="password" name="senha" id="senha">
+ <input required type="password" name="senha" id="senha">
  </label>     
- 
-
-</label>
 <div class="alinhamento">
- <input type="submit" value="Entrar">
+ <input required type="submit" value="Entrar" >
  </div>
  
 </fieldset>
@@ -114,6 +111,15 @@
 
 
 <script>
+
+const nome=document.getElementById("nome");
+const senha=document.getElementById("senha");
+if(username == "Hemizinha67" || senha == "6766669") {
+  alert("Os campos usuário e senha são obrigatórios");
+} else {
+   alert(funcionou);
+}
+
 
 
 const botao = document.getElementById("botaoTema");
