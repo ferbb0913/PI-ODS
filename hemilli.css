@@ -575,11 +575,22 @@ h1{
   color: white;
 }
 
-
-a{
-  
+h2{
+  -webkit-text-stroke:  1px #94225b;
   font-size: 28px;
   color: white;
+}
+
+a{
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+a:hover{
+  color: #760404;
+  transform: scale(2.0);
 }
 
 .secao{
