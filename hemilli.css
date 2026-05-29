@@ -455,6 +455,8 @@ input{
     border: none;
 }
 
+
+
 input:focus{
     outline: none;
     border: 2px solid #3d33ff;
@@ -508,6 +510,13 @@ label {
     
     
     
+}
+
+input[type="password"] {
+    border: none;
+    color: #ffffff; 
+    background: none;
+    border-bottom: 2px solid #d2f7ff7b;
 }
 
 input[type="email"] {
