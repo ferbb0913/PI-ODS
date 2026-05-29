@@ -72,6 +72,9 @@ a{
 
 a:hover{
   color: #760404;
+  text-shadow: 0 0 5px #ffffff,
+               0 0 10px #ffffff,
+               0 0 20px #ffffff;
   transform: scale(2.0);
 }
 
