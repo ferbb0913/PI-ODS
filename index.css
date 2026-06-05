@@ -1,3 +1,129 @@
+
+
+
+
+
+
+/* ================= CELULARES ================= */
+
+@media (max-width: 768px){
+
+    .header1{
+        left: 70px;
+        top: 18px;
+        font-size: 1.1rem;
+    }
+
+    .peixe{
+        right: 15px;
+    }
+
+
+
+
+
+    section{
+        width: 95%;
+        margin: 100px auto;
+        padding-bottom: 30px;
+    }
+
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section a{
+        font-size: 1.2rem;
+        margin-right: 0;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    p{
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-section{
+        min-width: auto;
+    }
+
+    .menu-items{
+        width: 220px;
+    }
+
+    .anterior,
+    .proximo{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .botao-pix{
+        font-size: 1.5rem;
+        width: 100px;
+    }
+}
+
+/* ================= CARROSSEL DE CARDS ================= */
+
+@media (max-width: 768px){
+
+    .card{
+        flex: 0 0 220px;
+        width: 220px;
+        height: 180px;
+    }
+
+    .group{
+        gap: 10px;
+    }
+}
+
+/* ================= CELULARES PEQUENOS ================= */
+
+@media (max-width: 480px){
+
+    .header1{
+        font-size: 1rem;
+    }
+
+    .navbar .menu-items{
+        width: 180px;
+        padding-left: 15px;
+    }
+
+    .navbar .menu-items li{
+        font-size: 1rem;
+    }
+
+    section a{
+        font-size: 1rem;
+    }
+
+    .card{
+        flex: 0 0 180px;
+        width: 180px;
+        height: 140px;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+
+
+
 .container {
   
   width: 100%;
@@ -199,19 +325,23 @@ body{
    padding: 0;
 }
 
-a {
+ a{
     text-decoration: none;
     color: #ffffff;
 }
 
+
+
 .video{
-    margin-top: 200px;
-    justify-content: center;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
 }
 
-
+video {
+    width: 100%;
+    max-width: 800px;
+}
 /*-------------------------carrossel--------------------------------------------*/
 
  .carrossel{
@@ -406,23 +536,23 @@ section {
 }
 h1{
 
-     margin-top: 20px;
+     margin-top: 40px;
    
     color:#005160 ;
 }
 
-section a {
+section p {
     
 
-    margin-right: 50px;
+    text-align: center;
     color: rgb(11, 50, 71);
-    font-size: 30px;
+    font-size: clamp(2rem, 4vw, 2rem);
     cursor: pointer;
 }
 
 section img{
 
-margin-bottom: 30px;
+margin-bottom: 10px;
 margin-top: 0px;
 }
 
@@ -543,4 +673,31 @@ background: linear-gradient(0deg, rgba(186, 250, 255, 1) 1%, rgba(37, 207, 230, 
   to {
     transform: translateX(-50%);
   }
+}
+
+
+p{
+    font-size: 1.5rem;
+    color: #005160;
+    text-align: center;
+    
+}
+
+
+.pix{
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+
+}
+
+.pix-img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
