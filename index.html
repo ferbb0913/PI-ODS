@@ -216,10 +216,12 @@ Sobre nós
 
     <script>
 let pos = 0;
-
+interval=setInterval(avancar, 3000);
 function mover(){
     document.getElementById("imgs").style.transform =
     `translateX(-${pos * 100}%)`;
+    clearInterval(interval);
+    interval;
 }
 
 function avancar(){
@@ -242,7 +244,7 @@ function voltar(){
     mover();
 }
 
-setInterval(avancar, 6000);
+interval;
 
 
 const botao = document.getElementById("botaoTema");
