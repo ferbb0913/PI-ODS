@@ -158,8 +158,6 @@ header {
   position: fixed;
   width: 100%;
 
-  box-shadow: 0 1px 4px rgb(0, 118, 177);
-
   background:var(--azulescuro);
 }
 
@@ -336,7 +334,6 @@ video {
   width: 100%;
   overflow: hidden;
   position: relative;
-  box-shadow: #005160 1px 5px 8px;
  }
 
 .imgs{
