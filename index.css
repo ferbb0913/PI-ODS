@@ -1,7 +1,8 @@
-
-
-
-
+:root {
+    --branco:#F5EEDD;
+    --azulclaro:#84B3CE;
+    --azulescuro:#16587B;
+}
 
 
 /* ================= CELULARES ================= */
@@ -159,12 +160,7 @@ header {
 
   box-shadow: 0 1px 4px rgb(0, 118, 177);
 
-  background: linear-gradient(
-    0deg,
-    #75d1d1 0%,
-    #00a5c2 18%,
-    #6af7f0 100%
-  );
+  background:var(--azulescuro);
 }
 
 
