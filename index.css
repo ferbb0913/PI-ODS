@@ -175,9 +175,7 @@ html, body {
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background: #66e8ff;
-   background: radial-gradient(circle, rgba(102, 232, 255, 1) 0%,
- rgba(207, 255, 240, 1) 100%);
+  background-color: #85b2cf;
    margin: 0;
    padding: 0;
 }
@@ -310,8 +308,7 @@ body.dark .home {
 
 .footer {
   margin-top: 300px;
-  background: #1b8d8f;
-  background: linear-gradient(0deg, rgba(27, 141, 143, 1) 0%, rgba(189, 255, 232, 1) 0%, rgba(71, 209, 195, 1) 27%, rgb(68, 166, 169) 100%);
+  background-color: #17597c;
   color: #fff;
   padding: 40px 20px 10px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -377,7 +374,7 @@ section {
     margin: auto ;
     height: auto;
     
-    background: #22C1C3;
+    background: #f5eede;
     
     color: #005160;
     display: flex;
