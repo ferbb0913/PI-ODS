@@ -179,8 +179,7 @@ html, body {
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background: #85b2cf;
-   
+background: var(--azulclaro);
    margin: 0;
    padding: 0;
 }
@@ -308,19 +307,15 @@ body.dark .home {
 
 .footer {
   margin-top: 300px;
-  background: #17597c;
-  
-  color: #fff;
+  background: var(--azulescuro);
+  color:var(--branco);
   padding: 40px 20px 10px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .dark .footer {
-  color: #005160;
-   background: #30dbdb;
-  background: linear-gradient(0deg, rgba(48, 219, 219, 1) 0%,
- rgba(255, 255, 255, 1) 0%, rgba(32, 227, 204, 1) 27%
- , rgb(28, 69, 71) 100%);
+  color:var(--branco);
+   background:var(--preto);
 }
 
 
@@ -374,10 +369,8 @@ section {
     width: 80%;
     margin: auto ;
     height: auto;
-    
-    background-color: #f5eede;
-    
-    color: #005160;
+    background:var(--branco);
+    color:var(--preto);
     display: flex;
     flex-direction: column;
      align-items: center;
