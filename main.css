@@ -340,11 +340,8 @@ body.dark .home {
 }
 
 .dark .footer {
-  color: #005160;
-   background: #30dbdb;
-  background: linear-gradient(0deg, rgba(48, 219, 219, 1) 0%,
- rgba(255, 255, 255, 1) 0%, rgba(32, 227, 204, 1) 27%
- , rgb(28, 69, 71) 100%);
+  color: var(--branco);
+   background: var(--preto);
 }
 
 
@@ -381,7 +378,7 @@ body.dark .home {
 .footer-bottom {
      
   text-align: center;
-  border-top: 1px solid rgb(0, 56, 58);
+  border-top: 1px solid var(--branco);
   margin-top: 20px;
   padding-top: 10px;
   font-size: 14px;
