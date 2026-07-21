@@ -217,7 +217,14 @@ body{
     color: #ffffff;
 }
 
-
+.pix{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.pix  img{
+width: 35%;
+}
 
 .video{
     display: flex;
@@ -421,7 +428,7 @@ section {
     overflow: hidden;
 }
 h1{
-
+ text-align: center;
     margin-top: 40px;
     color: #17597c;
     font-family: gorda;
