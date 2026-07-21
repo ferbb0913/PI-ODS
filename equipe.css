@@ -1,3 +1,167 @@
+:root {
+    --branco:#F5EEDD;
+    --azulclaro:#84B3CE;
+    --azulescuro:#16587B;
+}
+
+
+/* ================= CELULARES ================= */
+
+@media (max-width: 768px){
+
+    .header1{
+        left: 70px;
+        top: 18px;
+        font-size: 1.1rem;
+    }
+
+    .peixe{
+        right: 15px;
+    }
+
+
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section a{
+        font-size: 1.2rem;
+        margin-right: 0;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    p{
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-section{
+        min-width: auto;
+    }
+
+    .menu-items{
+        width: 220px;
+    }
+
+    .anterior,
+    .proximo{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .botao-pix{
+        font-size: 1.5rem;
+        width: 100px;
+    }
+}
+
+/* ================= CARROSSEL DE CARDS ================= */
+
+@media (max-width: 768px){
+
+    .card{
+        flex: 0 0 220px;
+        width: 220px;
+        height: 180px;
+    }
+
+    .group{
+        gap: 10px;
+    }
+}
+
+/* ================= CELULARES PEQUENOS ================= */
+
+@media (max-width: 480px){
+
+    .header1{
+        font-size: 1rem;
+    }
+
+    .navbar .menu-items{
+        width: 180px;
+        padding-left: 15px;
+    }
+
+    .navbar .menu-items li{
+        font-size: 1rem;
+    }
+
+    section a{
+        font-size: 1rem;
+    }
+
+    .card{
+        flex: 0 0 180px;
+        width: 180px;
+        height: 140px;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+
+
+
+.container {
+  
+  width: 100%;
+  margin: auto;
+   display: flex;
+    justify-content: space-between;
+    flex-direction: row ;
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+
+
+
+.header1 {
+    position: absolute;
+    left: 80px;
+    top: 18px;
+    color: white;
+    font-weight:bold;
+}
+
+.peixe{
+  
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+header {
+
+
+  position: fixed;
+  
+  top: 0;
+  z-index: 9999;
+}
+.navbar{
+  position: sticky;
+  position: fixed;
+  width: 100%;
+
+  background:var(--azulescuro);
+}
+
+
 
 
 /*-----------------------------------------------*/
@@ -11,29 +175,16 @@ html, body {
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background-color:#83b3cd ;
+  background-color: #85b2cf;
    margin: 0;
    padding: 0;
 }
 
-a {
+ a{
     text-decoration: none;
     color: #ffffff;
 }
-nav{
-     margin-bottom: 500px;
-     
-     height: 100px;
-}
 
-
-h1{
-
-
-    text-align: center;
-    font-size: 2.5rem;
-    color: #132b25;
-}
 
 /*-------------------------DARK-MODE--------------------------------------------*/
 
@@ -96,64 +247,60 @@ body.dark a {
 
 
 
-/*-------------------------Carrossel--------------------------------------------*/
+/*-------------------------carrossel--------------------------------------------*/
 
-
-
-.caroulsel {
-  position: absolute;
- 
- 
-
+ .carrossel{
+    
   width: 100%;
+  overflow: hidden;
+  position: relative;
+ }
+
+.imgs{
+  margin-top: 0;
   display: flex;
+  transition: 0.5s;
+}
+
+.slide{
+  min-width: 100%;
   
-  overflow-x: auto;
-
- 
-
-gap: 0,5;
-  
-  scrollbar-width: none;
 }
 
-.caroulsel::-webkit-scrollbar {
-  display: none;
+.slide img{
+  margin-top: 0;
+  width: 100%;
+  display: block;
 }
 
-.group{
+.anterior,
+.proximo{
 
-   
-    display: flex;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
-    animation: spin 30s infinite linear;
-    
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+
+    font-size: 25px;
+    z-index: 10;
 }
-.card1 img{
 
-
-    width: 100%;
-    height: 100%;
+.anterior{
+    left: 10px;
 }
-.card1 {
-    
-    flex: 0 0 1900px; 
-    height: 500px;
-   
-    background: cornflowerblue;
 
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 1.5rem;
+.proximo{
+    right: 10px;
 }
-@keyframes spin{
-    from {translate: 0;}
-    to {translate: -100%;}
-}
+
+
+
 
 
 
