@@ -1,3 +1,13 @@
+:root {
+    --branco:#F5EEDD;
+    --azulclaro:#84B3CE;
+    --azulescuro:#16587B;
+
+    --preto: #05121a;
+    --drkazulescuro: #163447;
+    --drkazulclaro: #305b75;
+}
+
 .container {
   
   width: 100%;
