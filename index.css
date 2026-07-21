@@ -263,6 +263,12 @@ background: linear-gradient(0deg, #1b6464 0%, rgba(0, 93, 110, 1) 18%, rgba(115,
 
 }
 
+
+
+.dark footer{
+    background-color: #0d3347;
+}
+
 .dark .navbar{
 background-color:var(--preto);
 color:var(--branco);
@@ -270,9 +276,8 @@ color:var(--branco);
 
 
 body.dark {
-  background: radial-gradient(circle,
-    #0399b7 0%,
-    #0e5560 100%);
+  background:#4c6576 ;
+   
 }
 
 body.dark a {
