@@ -2,6 +2,10 @@
     --branco:#F5EEDD;
     --azulclaro:#84B3CE;
     --azulescuro:#16587B;
+
+    --preto: #05121a;
+    --drkazulescuro: #163447;
+    --drkazulclaro: #305b75;
 }
 
 
@@ -175,7 +179,9 @@ html, body {
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #85b2cf;
+   background: #66e8ff;
+   background: radial-gradient(circle, rgba(102, 232, 255, 1) 0%,
+ rgba(207, 255, 240, 1) 100%);
    margin: 0;
    padding: 0;
 }
@@ -260,9 +266,8 @@ background: linear-gradient(0deg, #1b6464 0%, rgba(0, 93, 110, 1) 18%, rgba(115,
 }
 
 .dark .navbar{
-   background: #75D1D1;
-background: linear-gradient(0deg, rgba(117, 209, 209, 1) 0%, #005d6e 18%, rgba(115, 209, 204, 1) 100%);
-
+background-color:var(--preto);
+color:var(--branco);
 }
 
 
@@ -283,12 +288,8 @@ body.dark .home {
 
 .dark section
 {
-  background: #22C1C3;
-  background: linear-gradient(0deg, rgb(24, 74, 75) 0%, rgb(32, 144, 144) 75%, rgb(0, 78, 98) 100%);
-  color: #005160;
-
-
-
+  color:var(--branco);
+  background-color:var(--drkazulclaro);
 }
 .dark section h1{
     color: #00ffbf;
@@ -308,7 +309,8 @@ body.dark .home {
 
 .footer {
   margin-top: 300px;
-  background-color: #17597c;
+  background: #1b8d8f;
+  background: linear-gradient(0deg, rgba(27, 141, 143, 1) 0%, rgba(189, 255, 232, 1) 0%, rgba(71, 209, 195, 1) 27%, rgb(68, 166, 169) 100%);
   color: #fff;
   padding: 40px 20px 10px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -374,7 +376,7 @@ section {
     margin: auto ;
     height: auto;
     
-    background: #f5eede;
+    background: #22C1C3;
     
     color: #005160;
     display: flex;
@@ -382,7 +384,6 @@ section {
      align-items: center;
     padding-top: 0px;
     padding-bottom: 50px;
-    border-radius: 10px;
     overflow: hidden;
 }
 h1{
