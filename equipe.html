@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="main.css">
 <body>
     
-        <nav>
+       <nav>
 
 <div class="carrossel">
 
@@ -76,7 +76,7 @@
         <div class="navbar">
         <div class="header1"><p>SeaWorld</p></div>
         <div style="display: flex; width:50%; margin-inline: auto;">
-        <div class="menu-items"><a href="index.html #sobre">Sobre</a></div>
+        <div class="menu-items"><a href="index.html">Sobre</a></div>
         <div class="menu-items"><a href="#">Equipe</a></div>
         <div class="menu-items"><a href="form.html">Participe</a></div>
         <div class="menu-items"><a href="#contato">Contatos</a></div>
@@ -316,6 +316,36 @@
 
 
 <script>
+let pos = 0;
+interval=setInterval(avancar, 3000);
+function mover(){
+    document.getElementById("imgs").style.transform =
+    `translateX(-${pos * 100}%)`;
+    clearInterval(interval);
+    interval;
+}
+
+function avancar(){
+
+    pos++;
+    if(pos > 6){
+        pos = 0;
+    }
+
+    mover();
+}
+
+function voltar(){
+
+    pos--;
+    if(pos < 0){
+        pos = 6;
+    }
+
+    mover();
+}
+
+interval;
 
 
 const botao = document.getElementById("botaoTema");

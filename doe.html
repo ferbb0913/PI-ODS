@@ -7,7 +7,7 @@
     <title>Doe</title>
 </head>
 <body>
-        <nav>
+         <nav>
 
 <div class="carrossel">
 
@@ -122,6 +122,36 @@
   </div>
 </footer>    
 <script>
+let pos = 0;
+interval=setInterval(avancar, 3000);
+function mover(){
+    document.getElementById("imgs").style.transform =
+    `translateX(-${pos * 100}%)`;
+    clearInterval(interval);
+    interval;
+}
+
+function avancar(){
+
+    pos++;
+    if(pos > 6){
+        pos = 0;
+    }
+
+    mover();
+}
+
+function voltar(){
+
+    pos--;
+    if(pos < 0){
+        pos = 6;
+    }
+
+    mover();
+}
+
+interval;
 
 
 const botao = document.getElementById("botaoTema");
