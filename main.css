@@ -475,12 +475,13 @@ margin-top: 0px;
     align-items: center;
     justify-content:center ;
     margin-top: 300px;
+    gap: 70px;
 }
 
 .card {
     margin-top: -200px;
-    width: 300px;
-    height: 254px;
+    width: 350px;
+    height: 550px;
     perspective: 1000px;
     
 }
@@ -532,21 +533,30 @@ margin-top: 0px;
 
 .back p{
 
-    font-size: 17px;
+    font-size: 4rem;
+}
+
+.back h2{
+
+    font-size: 3rem;
 }
 
 .back a{
 
     color: #48909b;
+    font-size: 2rem;
 }
 
+.animal{
 
+    font-size: 1.5rem;
+}
 
 /*---------Formulario-----------*/
 
 .dark h1{
 
-    
+    font-size: 1rem;
     color:#0d3347 ;
     
   
