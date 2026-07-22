@@ -3,8 +3,8 @@
     --azulclaro:#84B3CE;
     --azulescuro:#16587B;
 
-    --preto: #05121a;
-    --drkazulescuro: #163447;
+    --preto: #0d3347;
+    --drkazulescuro: #4c6576;
     --drkazulclaro: #305b75;
 }
 @font-face {
@@ -27,7 +27,7 @@
     .header1{
         left: 70px;
         top: 18px;
-        font-size: 1.1rem;
+        font-size: 40px;
     }
 
     .peixe{
@@ -36,7 +36,9 @@
 
 
     h1{
+        color: #f5eede;
         font-size: 2rem;
+
         text-align: center;
     }
 
@@ -106,6 +108,10 @@
         padding-left: 15px;
     }
 
+.menu-items a{
+    font-size: 60px;
+}
+
     .navbar .menu-items li{
         font-size: 1rem;
     }
@@ -147,7 +153,7 @@
 
 .header1 {
     width: 20%;
-    left: 80px;
+    
     top: 18px;
     color: white;
     font-weight:bold;
@@ -159,7 +165,7 @@
     margin: 0;
     text-align: center;
     font-family: Hfont ;
-    font-size: 2.3vw;
+     font-size: 1rem;
 }
 
 .peixe{
@@ -168,7 +174,7 @@ display: flex;
 justify-content: right;
 width: 10%;
 height: 100%;
-padding-right:15px;
+padding-right: 1rem;
 }
 .navbar{
   z-index: 999;
@@ -188,7 +194,7 @@ align-items: center;
     }
     .menu-items a {
  font-family: Hfont;
- font-size: 1.3vw;
+ font-size: 1rem;
     }
     .menu-items a:hover {
 color: var(--azulclaro);
@@ -331,6 +337,18 @@ body.dark .home {
 }
 
 
+.dark .back {
+  
+
+    background:#0d3347;
+    border: 2px solid #03849e7b;
+ 
+
+    
+  
+    color: #2f6558;
+   
+}
 
 
 
@@ -403,7 +421,7 @@ section {
     margin: auto ;
     height: auto;
     
-    background-color: #f5eede;
+    background-color: #def5f5;
     
     color: #005160;
     display: flex;
@@ -416,9 +434,14 @@ section {
 h1{
  text-align: center;
     margin-top: 40px;
-    color:var(--azulescuro) ;
-    font-family: gorda;
+    color: #17597c;
+    font-family: magra;
+    text-align: center;
+    font-weight:bolder;
 }
+
+
+
 
 section p {
     font-family: magra;
@@ -440,16 +463,23 @@ margin-top: 0px;
 
 /*-------------------cartões-giratórios---------------------*/
 
+
+.cartaofdp{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
 .container2 {
     display: flex;
-    justify-content: center; 
+    align-items: center;
+    justify-content:center ;
     margin-top: 300px;
-    gap: 40px;
 }
 
 .card {
     margin-top: -200px;
-    width: 190px;
+    width: 300px;
     height: 254px;
     perspective: 1000px;
     
@@ -473,22 +503,25 @@ margin-top: 0px;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 4px;
     overflow: hidden;
 }
 
-.front {
-    background: #ff0000;
+.front{
+
+
+
+    width: 900px;
 }
 
 .back {
   
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background: linear-gradient(to bottom, #30dff7, #00d5ff);
+    background:#f5eede;
     border: 2px solid #03849e7b;
  
 
-    box-shadow: inset 0 4px 7px rgba(151, 255, 255, 0.847), 0 4px 5px rgba(1, 106, 106, 0.618);
+    
     transform: rotateY(180deg);
     display: block ;
     margin-top: 10px;
@@ -511,34 +544,95 @@ margin-top: 0px;
 
 /*---------Formulario-----------*/
 
+.dark h1{
 
+    
+    color:#0d3347 ;
+    
+  
+}
 
+.dark  .pai .form{
 
-.dark .pai .form{
-
-    background: linear-gradient(to bottom, #025176, #04b8b5);
-    color: #A9D5CA;
+    background: #0d3347 ;
+    color: #003cff;
 }
 
 .dark .form input {
 
 
-background-color: #ffffff;
-color: #2200ff;
+color: #bfe5fa;
+}
+
+.dark form{
+ 
+  
+  background-color:var(--drkazulclaro);
+  border: 2px solid #0000007b;
+  
+ 
 }
 
 
-.dark input::placeholder {
-  color: #0011ff;
+.dark form h1{
+
+  color: #85b2cf ;
+ 
+
 }
 
-.dark input::-webkit-input-placeholder {
-  color: #ff0000;
+
+.dark input[type="submit"] {
+    
+    background: #f5eede;
+    color: #17597c;
+   
 }
 
-.dark input:-ms-input-placeholder {
-  color: #0051ff;
+.dark label {
+  
+     color: #fff9eb;
+   
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+.dark input[type="email"] {
+    
+    color: #85b2cf;
+    border-bottom: 2px solid #bbe7ff72;
+}
+
+.dark input[type="text"] {
+  color: #85b2cf;
+    border-bottom: 2px solid #bbe7ff72;
+}
+
+.dark input[type="number"] {
+
+    color: #85b2cf;
+    border-bottom: 2px solid #bbe7ff72;
+}
+
+.dark input[type="date"] {
+  color: #85b2cf;
+    border-bottom: 2px solid #bbe7ff72;
+    
+}
+
+
+
+
+
 
 
 
@@ -550,13 +644,12 @@ color: #2200ff;
 form{
  
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #30dff7, #00d5ff);
-  border: 2px solid #03849e7b;
-  width: 30%;
+  background-color:#f5eede;
+  border: 2px solid #0000007b;
+  width: 80%;
   margin: 95px auto 30px auto;
-  border-radius: 10px;
-  box-shadow: inset 0 4px 7px rgba(151, 255, 255, 0.847), 0 4px 5px rgba(1, 106, 106, 0.618);
-   
+  border-radius: 7px;
+ 
 }
 
 fieldset{
@@ -573,20 +666,20 @@ input{
 }
 
 ::placeholder {
-    color: #ffffff;
+    color: #000000;
     border: none;
 }
 
 input:focus{
     outline: none;
-    border: 2px solid #3d33ff;
+    
 }
 
 
 form h1{
 
-  color: #ffffff ;
-  -webkit-text-stroke: 1px #429aab9b;
+  color: #17597c ;
+ 
   
   text-align: center;
   margin-top: 20px;
@@ -600,13 +693,11 @@ form h1{
     align-items: center;
 }
 input[type="submit"] {
-    background: #8cffff;
-    background: linear-gradient(0deg, rgba(140, 255, 255, 1) 0%, rgba(58, 237, 240, 1) 4%, rgba(44, 133, 248, 1) 85%, rgba(168, 203, 255, 1) 100%);
-    color: white;
+    
+    background: #17597c;
+    color: #f5eede;
+   
     border: none;
-    box-shadow: 0 4px 4px rgba(50, 75, 75, 0.411);
-    box-shadow: inset 0 4px 7px rgba(131, 200, 239, 0.847), 0 4px 5px rgba(1, 106, 106, 0.618);
-    border: 2px solid #00d5ff7b;
     padding: 15px 5px;
     width: 30%;
     cursor: pointer;
@@ -616,18 +707,13 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   transform: scale(1.05);
-   box-shadow: 0 2px 5px rgba(1, 106, 106, 0.618);
-}
-
-placeholder {
-    color: #ffffff;
-    opacity: 1; 
+  
 }
 
 label {
-  text-shadow: 1px 1px 2px rgb(0, 56, 58);
-     color: #ffffff ;
-    
+  
+     color: #17597c ;
+  
     
     
 }
@@ -635,27 +721,27 @@ label {
 input[type="email"] {
     border: none;
     background: none;
-    color: #ffffff;
-    border-bottom: 2px solid #d2f7ff7b;
+    color: #85b2cf;
+    border-bottom: 2px solid #17597c72;
 }
 
 input[type="text"] {
     border: none;
-    color: #ffffff; 
+color: #85b2cf;
     background: none;
-    border-bottom: 2px solid #d2f7ff7b;
+    border-bottom: 2px solid #17597c72;
 }
 
 input[type="number"] {
 
     border: none;
     background: none;
-    color: #ffffff;
-    border-bottom: 2px solid #d2f7ff7b;
+    color: #85b2cf;
+    border-bottom: 2px solid #17597c72;
 }
 
 input[type="date"] {
-    color: #ffffff;
+    color: #85b2cf;
     border: none;
     background: none;
     
