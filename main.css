@@ -417,7 +417,7 @@ section {
     margin: auto ;
     height: auto;
     
-    background-color: #f5eede;
+    background-color: #def5f5;
     
     color: #005160;
     display: flex;
@@ -431,17 +431,13 @@ h1{
  text-align: center;
     margin-top: 40px;
     color: #17597c;
-    font-family: gorda;
+    font-family: magra;
     text-align: center;
+    font-weight:bolder;
 }
 
 
-.dark h1{
 
-    
-    color: #f5eede ;
-  
-}
 
 section p {
     font-family: magra;
@@ -463,16 +459,28 @@ margin-top: 0px;
 
 /*-------------------cartões-giratórios---------------------*/
 
-.container2 {
+
+.cartaofdp{
     display: flex;
-    justify-content: center; 
+  align-items: center;
+  justify-content:center ;
+}
+
+.container2 {
+     display: flex;
+  align-items: center;
+  justify-content:center ;
+    
     margin-top: 300px;
-    gap: 40px;
+
+  
+  
+
 }
 
 .card {
     margin-top: -200px;
-    width: 190px;
+    width: 300px;
     height: 254px;
     perspective: 1000px;
     
@@ -500,7 +508,12 @@ margin-top: 0px;
     overflow: hidden;
 }
 
+.front{
 
+
+
+    width: 900px;
+}
 
 .back {
   
@@ -532,41 +545,101 @@ margin-top: 0px;
 
 /*---------Formulario-----------*/
 
+.dark h1{
 
-
+    
+    color:#0d3347 ;
+    
+  
+}
 
 .dark  .pai .form{
 
     background: #0d3347 ;
-    color: #00ffbf;
+    color: #003cff;
 }
 
 .dark .form input {
 
 
+color: #bfe5fa;
+}
 
-color: #00a6ff;
+.dark form{
+ 
+  
+  background-color:var(--drkazulclaro);
+  border: 2px solid #0000007b;
+  
+ 
 }
 
 
-.dark input::placeholder {
-  color: #0011ff;
-}
+.dark form h1{
 
-.dark input::-webkit-input-placeholder {
-  color: #ff0000;
-}
-
-.dark input:-ms-input-placeholder {
-  color: #0051ff;
-}
-
-
-.dark fildset{
-
- background: #0d3347 ;
+  color: #85b2cf ;
+ 
 
 }
+
+
+.dark input[type="submit"] {
+    
+    background: #f5eede;
+    color: #17597c;
+   
+}
+
+.dark label {
+  
+     color: #fff9eb;
+   
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+.dark input[type="email"] {
+    
+    color: #85b2cf;
+    border-bottom: 2px solid #bbe7ff72;
+}
+
+.dark input[type="text"] {
+  color: #85b2cf;
+    border-bottom: 2px solid #bbe7ff72;
+}
+
+.dark input[type="number"] {
+
+    color: #85b2cf;
+    border-bottom: 2px solid #bbe7ff72;
+}
+
+.dark input[type="date"] {
+  color: #85b2cf;
+    border-bottom: 2px solid #bbe7ff72;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 form{
@@ -600,14 +673,14 @@ input{
 
 input:focus{
     outline: none;
-    border: 2px solid #3d33ff;
+    
 }
 
 
 form h1{
 
   color: #17597c ;
-  -webkit-text-stroke: 1px #429aab9b;
+ 
   
   text-align: center;
   margin-top: 20px;
@@ -635,18 +708,13 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   transform: scale(1.05);
-   box-shadow: 0 2px 5px rgba(1, 106, 106, 0.618);
-}
-
-placeholder {
-    color: #17597c;
-    opacity: 1; 
+  
 }
 
 label {
-  text-shadow: 1px 1px 2px rgb(0, 56, 58);
+  
      color: #17597c ;
-    
+  
     
     
 }
@@ -654,27 +722,27 @@ label {
 input[type="email"] {
     border: none;
     background: none;
-    color: #ffffff;
-    border-bottom: 2px solid #d2f7ff7b;
+    color: #85b2cf;
+    border-bottom: 2px solid #17597c72;
 }
 
 input[type="text"] {
     border: none;
-    color: #ffffff; 
+color: #85b2cf;
     background: none;
-    border-bottom: 2px solid #d2f7ff7b;
+    border-bottom: 2px solid #17597c72;
 }
 
 input[type="number"] {
 
     border: none;
     background: none;
-    color: #ffffff;
-    border-bottom: 2px solid #d2f7ff7b;
+    color: #85b2cf;
+    border-bottom: 2px solid #17597c72;
 }
 
 input[type="date"] {
-    color: #ffffff;
+    color: #85b2cf;
     border: none;
     background: none;
     
