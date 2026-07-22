@@ -3,9 +3,9 @@
     --azulclaro:#84B3CE;
     --azulescuro:#16587B;
 
-    --preto: #0d3347;
-    --drkazulescuro: #4c6576;
-    --drkazulclaro: #305b75;
+    --preto: rgb(3, 15, 22);
+    --drkazulescuro: rgb(14, 40, 58);
+    --drkazulclaro: rgb(29, 65, 88);
 }
 @font-face {
   font-family: Hfont;
@@ -594,8 +594,8 @@ color: #bfe5fa;
 
 .dark input[type="submit"] {
     
-    background: #f5eede;
-    color: #17597c;
+    background: var(--preto);
+    color: var(--branco);
    
 }
 
