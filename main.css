@@ -226,7 +226,7 @@ body{
    padding: 0;
 }
 
- a{
+ .navbar a{
     text-decoration: none;
     color: #ffffff;
 }
@@ -371,7 +371,11 @@ body.dark .home {
    
 }
 
-
+.dark .outros{
+    color: #f5eede;
+  
+    
+}
 
 /*--------------------footer----------------------*/
 
@@ -442,7 +446,7 @@ section {
     margin: auto ;
     height: auto;
     
-    background-color: #def5f5;
+    background-color: #fff9eb;
     
     color: #005160;
     display: flex;
@@ -809,6 +813,60 @@ width: 70%;
     width: 70%;
     margin-top: 20px;
     color: #17597c;
+    
     font-size: 1.3rem;
 }
 
+
+.dark .caralho{
+    color: #f5eede;
+    background-color: #17597c;
+}
+
+
+.caralho{
+    margin-top: 30px;
+    
+    background-color: #f5eede;
+    display: block;
+   
+    
+}
+
+a{
+    color: #0d3347;
+    text-decoration: none;
+}
+
+.alinharvejamais{
+    display: flex;
+    justify-content: left ;
+    margin-top: 20px;
+    width: 70%;
+    gap: 50px;
+     margin-left: 180px;
+   
+    
+}
+
+.outros{
+    color: #0d3347;
+    font-size: 3rem;
+    
+    
+}
+
+.lead2{
+  font-size: 1.7rem; 
+  
+  font-weight: bold;
+}
+
+.lead3{
+font-size: 1.5rem;
+width: 100%; 
+}
+
+.leadfoda{
+    width: 70%;
+}

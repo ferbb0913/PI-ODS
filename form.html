@@ -8,57 +8,15 @@
 <link rel="stylesheet" href="main.css">
 <body>
 
-         <nav>
+      <nav>
 
 <div class="carrossel">
 
-    <div class="imgs" id="imgs">
+    <div class="imgs">
 
-        <div class="slide">
-            <img src="imagens/peixe1.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe2.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe3.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe4.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe5.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe6.png">
-        </div>
-        <div class="slide">
-            <img src="imagens/peixe1.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe2.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe3.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe4.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe5.png">
-        </div>
-
-        <div class="slide">
-            <img src="imagens/peixe6.png">
+        <div class="slide" >
+            <div id="fadeover"></div>
+            <img src="imagens/peixe1.png" id="imgs">
         </div>
 
     </div>
@@ -163,38 +121,47 @@
 
 
 
-<script>
-let pos = 0;
+  <script>
+let pos = 1;
 interval=setInterval(avancar, 3000);
 function mover(){
-    document.getElementById("imgs").style.transform =
-    `translateX(-${pos * 100}%)`;
+    fade(500,1,"fadeover");
     clearInterval(interval);
+    setTimeout(() => {
+    document.getElementById("imgs").src = `imagens/peixe`+pos+`.png`;
+    fade(500,0,"fadeover");
+}, 500);
     interval;
 }
-
 function avancar(){
 
     pos++;
     if(pos > 6){
-        pos = 0;
+        pos = 1;
     }
-
     mover();
 }
-
 function voltar(){
-
     pos--;
-    if(pos < 0){
+    if(pos < 1){
         pos = 6;
     }
-
     mover();
 }
 
 interval;
-
+function fade(ftime,fop,id){
+    let count = 0;
+let opadd = (fop - Number(document.getElementById(id).style.opacity))/15;
+ let interval2 = setInterval(() => {
+document.getElementById(id).style.opacity = opadd+Number(document.getElementById(id).style.opacity);
+count++;
+console.log(count)
+if(count == 15){
+    clearInterval(interval2)
+}
+}, ftime/15);
+}
 
 const botao = document.getElementById("botaoTema");
 

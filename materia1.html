@@ -19,7 +19,7 @@
         <div class="navbar">
         <div class="header1"><p>SeaWorld</p></div>
         <div style="display: flex; width:50%; margin-inline: auto;">
-        <div class="menu-items"><a href="#sobre">Sobre</a></div>
+        <div class="menu-items"><a href="index.html #sobre">Sobre</a></div>
         <div class="menu-items"><a href="equipe.html">Equipe</a></div>
         <div class="menu-items"><a href="form.html">Participe</a></div>
         <div class="menu-items"><a href="#contato">Contatos</a></div>
@@ -41,7 +41,7 @@
 <section id="sobre">
  
 
-<img src="imagens/anuncio1.png" width="100%">
+<img src="imagens/peixe1.png" width="100%">
 
 
     <div class="titulo">
@@ -70,17 +70,39 @@ Especialistas destacam que o cenário observado no Ártico pode se repetir em ou
 Em comunicado divulgado durante o Congresso Mundial da Natureza da IUCN, a organização ressaltou que a situação das focas árticas evidencia a urgência de medidas globais para reduzir as emissões de gases de efeito estufa. Segundo os pesquisadores, sem uma desaceleração significativa do aquecimento global, a perda de habitat tende a se intensificar nas próximas décadas, colocando mais espécies em risco de desaparecimento.
     </div>
 
-  
 
-  
+<a href="materia2.html">
+
+  <div class="caralho">
+
+  <div class="alinharvejamais">
+
+
 <div class="outros">
     
-    s
+  Veja também
 </div>
 
+  </div>
+    <div class="alinharvejamais">
+
+        <img src="imagens/IMAGINE.png" width="35%">
+        <div>
+            <div class="lead2">
+    Isaque é encontrado palado de quatro, com uma maçã na boca em sua residência
+</div>
+
+<div class="lead3">
+    muleque de gtm que sofria bullying do renilson foi encontrado nessa sexta(13) por seus familiares, pelado.
+</div>
+        </div>
 
 
 
+</div>
+
+</div>
+</a>
 </section>
 
 
@@ -123,37 +145,46 @@ Em comunicado divulgado durante o Congresso Mundial da Natureza da IUCN, a organ
 
 
     <script>
-let pos = 0;
+let pos = 1;
 interval=setInterval(avancar, 3000);
 function mover(){
-    document.getElementById("imgs").style.transform =
-    `translateX(-${pos * 100}%)`;
+    fade(500,1,"fadeover");
     clearInterval(interval);
+    setTimeout(() => {
+    document.getElementById("imgs").src = `imagens/peixe`+pos+`.png`;
+    fade(500,0,"fadeover");
+}, 500);
     interval;
 }
-
 function avancar(){
 
     pos++;
     if(pos > 6){
-        pos = 0;
+        pos = 1;
     }
-
     mover();
 }
-
 function voltar(){
-
     pos--;
-    if(pos < 0){
+    if(pos < 1){
         pos = 6;
     }
-
     mover();
 }
 
 interval;
-
+function fade(ftime,fop,id){
+    let count = 0;
+let opadd = (fop - Number(document.getElementById(id).style.opacity))/15;
+ let interval2 = setInterval(() => {
+document.getElementById(id).style.opacity = opadd+Number(document.getElementById(id).style.opacity);
+count++;
+console.log(count)
+if(count == 15){
+    clearInterval(interval2)
+}
+}, ftime/15);
+}
 
 const botao = document.getElementById("botaoTema");
 
