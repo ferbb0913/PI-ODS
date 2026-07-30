@@ -307,6 +307,17 @@ color:var(--branco);
 }
 
 
+.dark .lead{
+  color: #f5eede;
+}
+
+.dark .corpo
+{
+    
+    color:#f5eede;
+   
+}
+
 body.dark {
     background: var(--drkazulescuro);
   /* background: radial-gradient(circle,
@@ -554,9 +565,17 @@ margin-top: 0px;
 
 /*---------Formulario-----------*/
 
+
+.dark .titulo{
+    margin-top: 50px;
+color:#f5eede;
+font-size: 2rem;
+}
+
+
 .dark h1{
 
-    font-size: 1rem;
+    font-size: 2rem;
     color:#0d3347 ;
     
   
@@ -756,3 +775,30 @@ input[type="date"] {
     background: none;
     
 }
+
+
+/*--------materias---------*/
+
+
+
+
+ .titulo{
+    margin-top: 50px;
+color:#17597c;
+font-size: 2rem;
+width: 70%;
+}
+
+.lead{
+  font-size: 1.5rem; 
+  width: 70%; 
+}
+
+.corpo
+{
+    width: 70%;
+    margin-top: 20px;
+    color: #17597c;
+    font-size: 1.3rem;
+}
+
