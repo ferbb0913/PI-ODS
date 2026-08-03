@@ -313,15 +313,15 @@ function voltar(){
 interval;
 function fade(ftime,fop,id){
     let count = 0;
-let opadd = (fop - Number(document.getElementById(id).style.opacity))/15;
+let opadd = (fop - Number(document.getElementById(id).style.opacity))/20;
  let interval2 = setInterval(() => {
 document.getElementById(id).style.opacity = opadd+Number(document.getElementById(id).style.opacity);
 count++;
 console.log(count)
-if(count == 15){
+if(count == 20){
     clearInterval(interval2)
 }
-}, ftime/15);
+}, ftime/20);
 }
 
 const botao = document.getElementById("botaoTema");
