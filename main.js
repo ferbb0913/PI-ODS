@@ -1,16 +1,15 @@
 
 let pos = 1;
-let interval=setInterval(avancar, 3000);
+let interval=setInterval(avancar, 5000);
 function mover(){
     fade(500,1,"fadeover");
-    clearInterval(interval);
+clearInterval(interval);
     setTimeout(() => {
     document.getElementById("imgs").src = `imagens/peixe`+pos+`.png`;
     document.getElementById("catia").href =`materia`+pos+`.html`;
     fade(500,0,"fadeover");
-    interval
 }, 700);
-    console.log("asdasd");
+interval=setInterval(avancar, 5000);
 }
 function avancar(){
 
@@ -28,7 +27,6 @@ function voltar(){
     mover();
 }
 
-interval;
 function fade(ftime,fop,id){
     let count = 0;
 let opadd = (fop - Number(document.getElementById(id).style.opacity))/20;
