@@ -66,7 +66,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="1"></p>
           
         </div>
     </div>
@@ -77,7 +77,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="2"></p>
           
         </div>
     </div>
@@ -88,7 +88,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="3"></p>
           
         </div>
     </div>
@@ -99,7 +99,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="4"></p>
           
         </div>
     </div>
@@ -110,66 +110,7 @@
             
         </div>
         <div class="back">
-            
-          
-        </div>
-    </div>
-</div>
-</div>
-<diV class="container3">
-
-
-<div class="cardmemoria">
-    <div class="content">
-        <div class="front">
-            
-        </div>
-        <div class="back">
-            
-          
-        </div>
-    </div>
-</div>
-<div class="cardmemoria">
-    <div class="content">
-        <div class="front">
-            
-        </div>
-        <div class="back">
-            
-          
-        </div>
-    </div>
-</div>
-<div class="cardmemoria">
-    <div class="content">
-        <div class="front">
-            
-        </div>
-        <div class="back">
-            
-          
-        </div>
-    </div>
-</div>
-<div class="cardmemoria">
-    <div class="content">
-        <div class="front">
-            
-        </div>
-        <div class="back">
-            
-          
-        </div>
-    </div>
-</div>
-<div class="cardmemoria">
-    <div class="content">
-        <div class="front">
-            
-        </div>
-        <div class="back">
-            
+            <p id="5"></p>
           
         </div>
     </div>
@@ -184,7 +125,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="6"></p>
           
         </div>
     </div>
@@ -195,7 +136,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="7"></p>
           
         </div>
     </div>
@@ -206,7 +147,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="8"></p>
           
         </div>
     </div>
@@ -217,7 +158,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="9"></p>
           
         </div>
     </div>
@@ -228,7 +169,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="10"></p>
           
         </div>
     </div>
@@ -243,7 +184,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="11"></p>
           
         </div>
     </div>
@@ -254,7 +195,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="12"></p>
           
         </div>
     </div>
@@ -265,7 +206,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="13"></p>
           
         </div>
     </div>
@@ -276,7 +217,7 @@
             
         </div>
         <div class="back">
-            
+            <p id="14"></p>
           
         </div>
     </div>
@@ -287,7 +228,66 @@
             
         </div>
         <div class="back">
+            <p id="15"></p>
+          
+        </div>
+    </div>
+</div>
+</div>
+<diV class="container3">
+
+
+<div class="cardmemoria">
+    <div class="content">
+        <div class="front">
             
+        </div>
+        <div class="back">
+            <p id="16"></p>
+          
+        </div>
+    </div>
+</div>
+<div class="cardmemoria">
+    <div class="content">
+        <div class="front">
+            
+        </div>
+        <div class="back">
+            <p id="17"></p>
+          
+        </div>
+    </div>
+</div>
+<div class="cardmemoria">
+    <div class="content">
+        <div class="front">
+            
+        </div>
+        <div class="back">
+            <p id="18"></p>
+          
+        </div>
+    </div>
+</div>
+<div class="cardmemoria">
+    <div class="content">
+        <div class="front">
+            
+        </div>
+        <div class="back">
+            <p id="19"></p>
+          
+        </div>
+    </div>
+</div>
+<div class="cardmemoria">
+    <div class="content">
+        <div class="front">
+            
+        </div>
+        <div class="back">
+            <p id="20"></p>
           
         </div>
     </div>
@@ -331,5 +331,19 @@
 
 
   <script src="main.js"></script>
+  <script>
+let cards = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
+
+function random(){
+let rng = Math.floor(Math.random()* 10)+1;
+if(cards.includes(rng.toString())){
+let i = cards.indexOf(rng.toString());
+cards.splice(i,1);
+
+}
+
+}
+
+  </script>
 </body>
 </html>
