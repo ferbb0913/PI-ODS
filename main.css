@@ -184,7 +184,8 @@ position: absolute;
 z-index: 9;
 pointer-events: none;
 opacity: 0;
-background-color: var(--preto);
+background-color: var(--drkazulescuro);
+background-image: url("imagens/ws.png");
 }
 .navbar{
   z-index: 999;
