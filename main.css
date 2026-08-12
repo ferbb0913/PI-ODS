@@ -820,17 +820,20 @@ input[type="date"] {
 
 
  .titulo{
+    font-weight:bold;
     font-family: Hfont;
     margin-top: 50px;
 color:#17597c;
-font-size: 2rem;
+font-size: 3rem;
 width: 70%;
+
 }
 
 .lead{
     font-family: magra;
-  font-size: 1.5rem; 
+  font-size: 2rem; 
   width: 70%; 
+  font-weight:bold;
 }
 
 .corpo
@@ -839,7 +842,7 @@ width: 70%;
     margin-top: 20px;
     color: #17597c;
     font-family: magra;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 
@@ -877,17 +880,20 @@ a{
 .outros{
     color: #0d3347;
     font-size: 3rem;
+    font-weight:bold;
+    font-family: Hfont;
     
     
 }
 
 .lead2{
   font-size: 1.7rem; 
-  
-  font-weight: bold;
+  font-weight:bold;
+    font-family: Hfont;
 }
 
 .lead3{
+    font-family: magra;
 font-size: 1.5rem;
 width: 100%; 
 }
