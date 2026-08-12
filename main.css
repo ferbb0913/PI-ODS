@@ -797,6 +797,7 @@ input[type="date"] {
 
 
  .titulo{
+    font-family: Hfont;
     margin-top: 50px;
 color:#17597c;
 font-size: 2rem;
@@ -804,6 +805,7 @@ width: 70%;
 }
 
 .lead{
+    font-family: magra;
   font-size: 1.5rem; 
   width: 70%; 
 }
@@ -813,7 +815,7 @@ width: 70%;
     width: 70%;
     margin-top: 20px;
     color: #17597c;
-    
+    font-family: magra;
     font-size: 1.3rem;
 }
 
