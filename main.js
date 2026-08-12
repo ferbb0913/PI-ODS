@@ -1,15 +1,15 @@
 
 let pos = 1;
-interval=setInterval(avancar, 3000);
+let interval=setInterval(avancar, 5000);
 function mover(){
     fade(500,1,"fadeover");
-    clearInterval(interval);
+clearInterval(interval);
     setTimeout(() => {
     document.getElementById("imgs").src = `imagens/peixe`+pos+`.png`;
     document.getElementById("catia").href =`materia`+pos+`.html`;
     fade(500,0,"fadeover");
 }, 700);
-    interval;
+interval=setInterval(avancar, 5000);
 }
 function avancar(){
 
@@ -27,14 +27,12 @@ function voltar(){
     mover();
 }
 
-interval;
 function fade(ftime,fop,id){
     let count = 0;
 let opadd = (fop - Number(document.getElementById(id).style.opacity))/20;
  let interval2 = setInterval(() => {
 document.getElementById(id).style.opacity = opadd+Number(document.getElementById(id).style.opacity);
 count++;
-console.log(count)
 if(count == 20){
     clearInterval(interval2)
 }
