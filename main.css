@@ -525,6 +525,13 @@ margin-top: 0px;
     perspective: 1000px;
     margin:0;
 }
+
+.cardmemoria .content .back img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-block: auto ;
+}
 .cardmemoria:hover .content {
     transform: rotateY(180deg) scale(1.2);
 }
