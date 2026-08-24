@@ -334,22 +334,35 @@
   <script>
 let cards = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
 
-window.addEventListener(onload = random())
+window.addEventListener(onload, random())
 
 function random(){
 let type = 1;
 let tc =  0;
-for(let i=0; i<(cards.length/2);i++){
+for(let i=0; i<10;i++){
 
 let rng = Math.floor(Math.random()* 20)+1;
 if(cards.includes(rng.toString())){
+    console.log(rng);
 let i = cards.indexOf(rng.toString());
+    console.log(i);
 document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
 cards.splice(i,1);
+
+rng = Math.floor(Math.random()* 20)+1;
+while(!cards.includes(rng.toString())){
+rng = Math.floor(Math.random()* 20)+1;
 }
-}
+    console.log(rng);
+i = cards.indexOf(rng.toString());
+console.log(i);
+document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
+cards.splice(i,1);
+type++
 
 }
+
+}}
 
   </script>
 </body>
