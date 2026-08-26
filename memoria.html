@@ -368,21 +368,22 @@ document.getElementById(cid).style.transform="rotateY(180deg) scale(1.2)"
 document.getElementById(cid).style.pointerEvents="none"
 fcards.push(cid)
 count++;
-if(count>=2){
+if(count>1){
 document.getElementById("cards").style.pointerEvents="none"
 if(document.getElementById(fcards.at(0)+".1").src == document.getElementById(fcards.at(1)+".1").src){
 document.getElementById("cards").style.pointerEvents="auto"
-fcards = []
+fcards = [];
 }else{
 setTimeout(() => { for(let i = 0;i<2;i++){
     console.log(fcards)
 document.getElementById(fcards.at(i)).style.transform="rotateY(0deg) scale(1)"
-document.getElementById(fcards.at(i)).style.pointerEvents="auto"
+document.getElementById(fcards.at(i)).style.pointerEvents=""
 document.getElementById("cards").style.pointerEvents="auto"
 }
-fcards = []} ,2000)}
-count = 0
+fcards = [];} ,1000)}
+count = 0 
 }
+console.log(fcards)
 }
 
   </script>
