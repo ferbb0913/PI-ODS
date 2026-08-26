@@ -538,7 +538,7 @@ padding: 0px;
 padding: 3px;
 }
 .cardmemoria:hover .content {
-    transform: rotateY(180deg) scale(1.2);
+    transform: rotateY(0deg)
 }
 
 .content {
