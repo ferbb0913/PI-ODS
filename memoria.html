@@ -293,7 +293,7 @@
     </div>
 </div>
 </div>
-
+<h1 id="timer"></h1>
 
 
 
@@ -372,6 +372,8 @@ if(count>1){
 document.getElementById("cards").style.pointerEvents="none"
 if(document.getElementById(fcards.at(0)+".1").src == document.getElementById(fcards.at(1)+".1").src){
 document.getElementById("cards").style.pointerEvents="auto"
+document.getElementById(fcards.at(0)).style.transform="rotateY(540deg) scale(1)"
+document.getElementById(fcards.at(1)).style.transform="rotateY(540deg) scale(1)"
 fcards = [];
 }else{
 setTimeout(() => { for(let i = 0;i<2;i++){
