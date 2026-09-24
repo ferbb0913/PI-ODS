@@ -13,7 +13,7 @@ Lista de coisas pra botar que sao faceis de fazer:
 (Permitir adicionar/remover itens e calcular total.)
 6-Validação de campos
 Mini Jogo Integrado
-Jogo da memória com imagens do projeto.
+Jogo da memória com imagens do projeto.ccc
 Sistema de Pontuação / Conquistas
 3-Ativar modo leitura simples (esconde banners, deixa só texto).
 Atalhos de Teclado
