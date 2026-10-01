@@ -12,7 +12,7 @@
 
  <body>
 
-    <audio id="foca" src="leituras/foca.mp3"></audio>
+    
     
 
 
@@ -44,9 +44,13 @@
 <img src="imagens/peixe1.png" width="100%">
 
 
-<div class="som" id="foca">
+<div class="som">
 
-    <a id="foca" onclick="tocarSom()">Leitura em voz alta</a>
+    <audio id="som" controls>
+  <source src="leituras/foca.mp3" type="audio/mp3">
+</audio>
+<button id="foca" onclick="tocarSom()">Leitura em voz alta</button>
+
 
 </div>
 
@@ -353,23 +357,15 @@ console.log(2);
 
 // Sons
 function tocarSom() {
-    som.currentTime = 0;
-    som.play();
+    document.getElementById("som").currentTime = 0;
+    document.getElementById("som").play();
 }
 
 
-function tocarSomHaaland() {
-    somHaaland.currentTime = 0;
-    somHaaland.play();
-}
 
-function tocarVini() {
-    somVini13.currentTime = 0;
-    somVini13.play();
-}
 
 // Som nos botões
-document.querySelectorAll("button").forEach(botao => {
+document.querySelectorAll("foca").forEach(botao => {
     botao.addEventListener("click", tocarSom);
 });
 
