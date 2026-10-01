@@ -334,7 +334,9 @@
 <script src="fade.js"></script>
   <script>
 let cards = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
+let cardammount = cards.length
 let fcards = [];
+let fincards = [];
 window.addEventListener(onload, random())
 let count = 0;
 function random(){
@@ -373,8 +375,9 @@ if(count>1){
 document.getElementById("cards").style.pointerEvents="none"
 if(document.getElementById(fcards.at(0)+".1").src == document.getElementById(fcards.at(1)+".1").src){
 document.getElementById("cards").style.pointerEvents="auto"
-document.getElementById(fcards.at(0)).style.transform="rotateY(540deg) scale(1)"
-document.getElementById(fcards.at(1)).style.transform="rotateY(540deg) scale(1)"
+document.getElementById(fcards.at(0)).style.transform="rotateY(540deg) scale(0.95)"
+document.getElementById(fcards.at(1)).style.transform="rotateY(540deg) scale(0.95)"
+fincards.push(fcards.at(0),fcards.at(1))
 fcards = [];
 }else{
 setTimeout(() => { for(let i = 0;i<2;i++){
@@ -387,7 +390,11 @@ fcards = [];} ,1000)}
 count = 0 
 }
 console.log(fcards)
+if (fcards.length >= cardammount){
+    random()
 }
+}
+
 
   </script>
 </body>
