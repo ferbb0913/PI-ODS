@@ -333,6 +333,7 @@
       <script src="main.js"></script>
 <script src="fade.js"></script>
   <script>
+    cardsize =20
 let cards = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
 let cardammount = (cards.length);
 let fcards = [];
@@ -341,27 +342,26 @@ window.addEventListener(onload, random())
 let count = 0;
 
 function random(){
-    let cardc = cards
 for(let type =1; type<11;type++){
 let rng = 0
-while(!cardc.includes(rng.toString())){
+while(!cards.includes(rng.toString())){
 rng = Math.floor(Math.random()* 20)+1;
 }
     console.log(rng);
-let i = cardc.indexOf(rng.toString());
+let i = cards.indexOf(rng.toString());
     console.log(i);
 document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
-cardc.splice(i,1);
+cards.splice(i,1);
 
 rng = 0
-while(!cardc.includes(rng.toString())){
+while(!cards.includes(rng.toString())){
 rng = Math.floor(Math.random()* 20)+1;
 }
     console.log(rng);
-i = cardc.indexOf(rng.toString());
+i = cards.indexOf(rng.toString());
 console.log(i);
 document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
-cardc.splice(i,1);
+cards.splice(i,1);
 
 }
 }
@@ -389,7 +389,9 @@ document.getElementById("cards").style.pointerEvents="auto"
 fcards = [];} ,1000)}
 count = 0 
 }
-console.log(fcards)
+console.log(cards.length,fincards.length
+
+)
 // if (fincards.length >= cards.length){
 //     random()
 // }
