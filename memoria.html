@@ -334,36 +334,36 @@
 <script src="fade.js"></script>
   <script>
 let cards = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
-let cardammount = cards.length
+let cardammount = (cards.length);
 let fcards = [];
 let fincards = [];
 window.addEventListener(onload, random())
 let count = 0;
-function random(){
 
+function random(){
+    let cardc = cards
 for(let type =1; type<11;type++){
 let rng = 0
-while(!cards.includes(rng.toString())){
+while(!cardc.includes(rng.toString())){
 rng = Math.floor(Math.random()* 20)+1;
 }
     console.log(rng);
-let i = cards.indexOf(rng.toString());
+let i = cardc.indexOf(rng.toString());
     console.log(i);
 document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
-cards.splice(i,1);
+cardc.splice(i,1);
 
 rng = 0
-while(!cards.includes(rng.toString())){
+while(!cardc.includes(rng.toString())){
 rng = Math.floor(Math.random()* 20)+1;
 }
     console.log(rng);
-i = cards.indexOf(rng.toString());
+i = cardc.indexOf(rng.toString());
 console.log(i);
 document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
-cards.splice(i,1);
+cardc.splice(i,1);
 
 }
-
 }
 
 function flip(cid){
@@ -390,9 +390,9 @@ fcards = [];} ,1000)}
 count = 0 
 }
 console.log(fcards)
-if (fcards.length >= cardammount){
-    random()
-}
+// if (fincards.length >= cards.length){
+//     random()
+// }
 }
 
 
