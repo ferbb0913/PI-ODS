@@ -377,6 +377,24 @@ body.dark .home {
     
 }
 
+/*---------dark-som-----------*/
+
+
+.dark audio::-webkit-media-controls-panel {
+background-color: var(--branco);
+}
+
+.dark audio::-webkit-media-controls-play-button {
+background-color: var(--azulclaro);
+border-radius: 20%;
+}
+
+.dark audio::-webkit-media-controls-current-time-display,
+.dark audio::-webkit-media-controls-time-remaining-display {
+color: var(--azulescuro);
+}
+
+
 /*--------------------footer----------------------*/
 
 
@@ -912,4 +930,35 @@ width: 100%;
 
 .leadfoda{
     width: 70%;
+}
+
+
+/*---------som-----------*/
+
+.som{
+
+
+margin: 20px;
+display: flex;
+
+}
+
+audio {
+width: 300px;
+height: 40px;
+}
+
+audio::-webkit-media-controls-panel {
+background-color: var(--azulescuro);
+
+}
+
+audio::-webkit-media-controls-play-button {
+background-color: var(--azulclaro);
+border-radius: 20%;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+color: var(--branco);
 }
