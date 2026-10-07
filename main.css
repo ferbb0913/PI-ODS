@@ -1,7 +1,7 @@
 :root {
     --branco:#F5EEDD;
     --azulclaro:#84B3CE;
-    --azulescuro:#16587B;
+    --afzulescuro:#16587B;
 
     --preto: rgb(3, 15, 22);
     --drkazulescuro: rgb(14, 40, 58);
@@ -169,12 +169,14 @@
 }
 
 .peixe{
-cursor: pointer;
 display: flex;
 justify-content: right;
 width: 10%;
 height: 100%;
 padding-right: 1rem;
+}
+.peixe img{
+    cursor: pointer;
 }
 #fadeover{
 transition: opacity 0.5;
@@ -200,10 +202,11 @@ background-color: var(--preto);
     width: 100%;
     justify-content: flex-end;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
 }
 .burgernavalign div{
 display:block;
+align-content: center;
 }
 .menu-itemsb{
         display: flex;
