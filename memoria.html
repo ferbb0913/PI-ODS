@@ -368,6 +368,8 @@ rng = Math.floor(Math.random()* 20)+1;
 i = cards.indexOf(rng.toString());
 console.log(i);
 document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
+document.getElementById(rng.toString()).style.transform="rotateY(0deg) scale(1)"
+document.getElementById(rng.toString()).style.pointerEvents=""
 cards.splice(i,1);
 
 }
