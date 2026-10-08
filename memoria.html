@@ -334,7 +334,8 @@
       <script src="main.js"></script>
 <script src="fade.js"></script>
   <script>
-    cardsize =20
+let points = 0
+let cardsize =20
 let cards = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
 let cardammount = (cards.length);
 let fcards = [];
@@ -343,6 +344,9 @@ window.addEventListener(onload, random())
 let count = 0;
 
 function random(){
+    cards = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
+    fincards = [];
+    points = 0
 for(let type =1; type<11;type++){
 let rng = 0
 while(!cards.includes(rng.toString())){
@@ -351,8 +355,10 @@ rng = Math.floor(Math.random()* 20)+1;
     console.log(rng);
 let i = cards.indexOf(rng.toString());
     console.log(i);
-document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
-cards.splice(i,1);
+    document.getElementById(rng.toString()+".1").src = "imagens/memo"+type+".jpg"
+document.getElementById(rng.toString()).style.transform="rotateY(0deg) scale(1)"
+document.getElementById(rng.toString()).style.pointerEvents=""
+console.log(cards.splice(i,1))
 
 rng = 0
 while(!cards.includes(rng.toString())){
@@ -375,6 +381,7 @@ count++;
 if(count>1){
 document.getElementById("cards").style.pointerEvents="none"
 if(document.getElementById(fcards.at(0)+".1").src == document.getElementById(fcards.at(1)+".1").src){
+    points =+ 10
 document.getElementById("cards").style.pointerEvents="auto"
 document.getElementById(fcards.at(0)).style.transform="rotateY(540deg) scale(0.95)"
 document.getElementById(fcards.at(1)).style.transform="rotateY(540deg) scale(0.95)"
@@ -382,6 +389,7 @@ fincards.push(fcards.at(0),fcards.at(1))
 fcards = [];
 }else{
 setTimeout(() => { for(let i = 0;i<2;i++){
+    points =- 2
     console.log(fcards)
 document.getElementById(fcards.at(i)).style.transform="rotateY(0deg) scale(1)"
 document.getElementById(fcards.at(i)).style.pointerEvents=""
@@ -390,15 +398,14 @@ document.getElementById("cards").style.pointerEvents="auto"
 fcards = [];} ,1000)}
 count = 0 
 }
-console.log(cards.length,fincards.length
-
-)
-// if (fincards.length >= cards.length){
-//     random()
-// }
+console.log(fincards.length,cardammount)
+if (fincards.length >= cardsize){
+    console.log("i")
+    setTimeout(() => {
+random()
+})
 }
-
-
+}
   </script>
 </body>
 </html>

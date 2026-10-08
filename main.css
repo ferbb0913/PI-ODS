@@ -1,7 +1,7 @@
 :root {
     --branco:#F5EEDD;
     --azulclaro:#84B3CE;
-    --afzulescuro:#16587B;
+    --azulescuro:#16587B;
 
     --preto: rgb(3, 15, 22);
     --drkazulescuro: rgb(14, 40, 58);
@@ -177,6 +177,7 @@ padding-right: 1rem;
 }
 .peixe img{
     cursor: pointer;
+    pointer-events: all;
 }
 #fadeover{
 transition: opacity 0.5;
@@ -568,7 +569,7 @@ color: var(--azulescuro);
 }
 
 .footer-section a {
- 
+  color:var(--azulclaro);
   text-decoration: none;
 }
 

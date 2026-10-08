@@ -1,45 +1,3 @@
-
-
-function dark() {
-    let theme = localStorage.getItem("theme")
-            if (theme === "light") {
-
-localStorage.setItem("theme", "dark");
-console.log(localStorage.getItem("theme"));
-console.log(1);
-
-            }
-            else if (theme === "dark"){
-
-localStorage.setItem("theme", "light");
-console.log(localStorage.getItem("theme"));
-console.log(2);
-
-            }
-        }
-
-document.getElementById("botaoTema").onclick(loadp())
-
-function loadp(){
-console.log("i")
-    document.body.classList.toggle("dark");
-    dark()
-}
-        window.onload = function load() {
-
-            let theme = localStorage.getItem("theme")
-
-            if (theme == null) {
-
-                localStorage.setItem("theme", "light");
-            }
-            console.log(localStorage.getItem("theme"));
-            if (theme == "dark"){
-document.body.classList.toggle("dark");
-            }
-
-        }
-
 function responsivonav(){
      
         const nav = document.getElementById('navmain');
@@ -69,7 +27,7 @@ function responsivonav(){
     <div class="burgernavalign">
      <div class="header1"><p>SeaWorld</p></div>
     <div class="peixe">
-        <img id="botaoTema" src="imagens/peixe.png" style="height: 100%;";>
+        <img onclick="toggle()" src="imagens/peixe.png" style="height: 100%;";>
       </div>
       </div>`;
         } else{
@@ -83,10 +41,47 @@ function responsivonav(){
         <div class="menu-items"><a href="memoria.html">Jogo da Memória</a></div>
     </div>
     <div class="peixe">
-        <img id="botaoTema" src="imagens/peixe.png" style="height: 100%;";>
+        <img onclick="toggle()" src="imagens/peixe.png" style="height: 100%;";>
       </div>`
         }
 }
 
 window.addEventListener('resize', responsivonav);
 responsivonav()
+
+
+function toggle() {
+dark()
+document.body.classList.toggle("dark");
+}
+function dark() {
+    let theme = localStorage.getItem("theme")
+            if (theme === "light") {
+
+localStorage.setItem("theme", "dark");
+console.log(localStorage.getItem("theme"));
+console.log(1);
+
+            }
+            else if (theme === "dark"){
+localStorage.setItem("theme", "light");
+console.log(localStorage.getItem("theme"));
+console.log(2);
+
+            }
+        }
+        window.onload = function load() {
+
+            let theme = localStorage.getItem("theme")
+
+            if (theme == null) {
+
+                localStorage.setItem("theme", "light");
+            }
+            console.log(localStorage.getItem("theme"));
+            if (theme == "dark"){
+document.body.classList.toggle("dark");
+            }
+
+        }
+
