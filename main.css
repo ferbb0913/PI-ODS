@@ -639,22 +639,23 @@ margin-top: 0px;
     display: flex;
     align-items: center;
     justify-content:center ;
-    margin-top: 300px;
+    flex-wrap: wrap;
+    margin-block: 150px;
     gap: 70px;
 }
 
 .card {
     font-family: magra;
-    margin-top: -200px;
-    width: 350px;
-    height: 550px;
-    perspective: 1000px;
-    
+    width: 35vw;
+    height: 55vw;
+    max-width: 350px;
+    max-height: 550px;
+    perspective: 1000px;   
 }
 .container3 {
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content:center;
     margin-top: 50px;
     gap: 50px;
 }
@@ -666,11 +667,10 @@ margin-top: 0px;
 }
 
 .cardmemoria .content .back img{
-    object-fit: cover;
+    object-fit: ccontain;
     width: 100%;
     height: 100%;
     border-radius: 4px;
-
 }
 .cardmemoria .content .back {
 padding: 0px;
@@ -703,7 +703,11 @@ padding: 3px;
     border-radius: 4px;
     overflow: hidden;
 }
-
+.front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .cardmemoria .front{
 
 background-color: var(--azulescuro);
