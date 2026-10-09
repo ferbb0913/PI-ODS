@@ -16,28 +16,8 @@
     
 
 
-        <div class="navbar">
-        <div class="header1"><p>SeaWorld</p></div>
-        <div style="display: flex; width:50%; margin-inline: auto;">
-        <div class="menu-items"><a href="index.html #sobre">Ínicio</a></div>
-        <div class="menu-items"><a href="equipe.html">Equipe</a></div>
-        <div class="menu-items"><a href="form.html">Participe</a></div>
-        <div class="menu-items"><a href="#contato">Contatos</a></div>
-        <div class="menu-items"><a href="doe.html">Doe</a></div>
-        <div class="menu-items"><a href="memoria.html">Jogo da Memoria</a></div>
-        <div class="menu-items"><a href="materias.html">Conteúdos</a></div>
+  <div class="navbar" id="navmain">
     </div>
-    <div class="peixe">
-        <img id="botaoTema" src="imagens/peixe.png" style="height: 100%;";>
-      </div>
-    </div>
-
-
-
-
-
-
-
   
 
 <section id="sobre">
@@ -280,94 +260,8 @@ Enquanto o debate continua, o baiacu livre de veneno surge como uma alternativa 
 
 
 
-    <script>
-let pos = 1;
-interval=setInterval(avancar, 3000);
-function mover(){
-    fade(500,1,"fadeover");
-    clearInterval(interval);
-    setTimeout(() => {
-    document.getElementById("imgs").src = `imagens/peixe`+pos+`.png`;
-    fade(500,0,"fadeover");
-}, 500);
-    interval;
-}
-function avancar(){
-
-    pos++;
-    if(pos > 6){
-        pos = 1;
-    }
-    mover();
-}
-function voltar(){
-    pos--;
-    if(pos < 1){
-        pos = 6;
-    }
-    mover();
-}
-
-interval;
-function fade(ftime,fop,id){
-    let count = 0;
-let opadd = (fop - Number(document.getElementById(id).style.opacity))/15;
- let interval2 = setInterval(() => {
-document.getElementById(id).style.opacity = opadd+Number(document.getElementById(id).style.opacity);
-count++;
-console.log(count)
-if(count == 15){
-    clearInterval(interval2)
-}
-}, ftime/15);
-}
-
-const botao = document.getElementById("botaoTema");
-
-botao.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    dark()
-});
-        window.onload = function load() {
-
-            let theme = localStorage.getItem("theme")
-
-            if (theme == null) {
-
-                localStorage.setItem("theme", "light");
-            }
-            console.log(localStorage.getItem("theme"));
-            if (theme == "dark"){
-document.body.classList.toggle("dark");
-            }
-
-        }
-
-        function dark() {
-            let theme = localStorage.getItem("theme")
-            if (theme == "light") {
-
-localStorage.setItem("theme", "dark");
-
-console.log(localStorage.getItem("theme"));
-
-console.log(1);
-
-            }
-            else if (theme == "dark"){
-
-                let theme = localStorage.getItem("theme")
-
-localStorage.setItem("theme", "light");
-
-console.log(localStorage.getItem("theme"));
-
-console.log(2);
-
-            }
-        }
-
-    </script>
+        <script src="main.js">
+</script>
 
    
 

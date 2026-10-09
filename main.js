@@ -16,11 +16,13 @@ function responsivonav(){
 
          <div class="menu-itemsb">
         <li><a href="index.html">Ínicio</a></li>
+        <li><a href="materias.html">Conteúdos</a></li>
         <li><a href="index.html#sobre">Sobre</a></li>
         <li><a href="equipe.html">Equipe</a></li>
         <li><a href="form.html">Participe</a></li>
         <li><a href="#contato">Contatos</a></li>
         <li><a href="doe.html">Doe</a></li>
+        <li><a href="memoria.html">Jogo da Memória</a></li>
       </div>
 
     </div>
@@ -34,6 +36,7 @@ function responsivonav(){
             nav.innerHTML = `<div class="header1"><p>SeaWorld</p></div>
         <div style="display: flex; width:50%; margin-inline: auto;">
         <div class="menu-items"><a href="index.html #sobre">Ínicio</a></div>
+        <div class="menu-items"><a href="materias.html">Conteúdos</a></div>
         <div class="menu-items"><a href="equipe.html">Equipe</a></div>
         <div class="menu-items"><a href="form.html">Participe</a></div>
         <div class="menu-items"><a href="#contato">Contatos</a></div>
