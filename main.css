@@ -796,37 +796,27 @@ color:#f5eede;
 font-size: 2rem;
 }
 
-
 .dark h1{
 
     font-size: 2rem;
     color:var(--branco) ;
-    
-  
 }
 
 .dark  .pai .form{
-
     background: #0d3347 ;
     color: #003cff;
 }
 
 .dark .form input {
-
-
 color: #bfe5fa;
 }
 
 .dark form{
-  
   background-color:var(--drkazulclaro);
   border: 2px solid #0000007b;
- 
 }
 
-
 .dark form h1{
-
   color: #85b2cf ;
 }
 
@@ -839,11 +829,9 @@ color: #bfe5fa;
      color: #fff9eb; 
 }
 
-
-.dark input[type="email"] {
-    
-    color: #85b2cf;
-    border-bottom: 2px solid #bbe7ff72;
+.dark input[type="email"] {  
+ color: #85b2cf;
+  border-bottom: 2px solid #bbe7ff72;
 }
 
 .dark input[type="text"] {
@@ -852,32 +840,25 @@ color: #bfe5fa;
 }
 
 .dark input[type="number"] {
-
     color: #85b2cf;
     border-bottom: 2px solid #bbe7ff72;
 }
 
 .dark input[type="date"] {
   color: #85b2cf;
-    border-bottom: 2px solid #bbe7ff72;
-    
+    border-bottom: 2px solid #bbe7ff72; 
 }
 
-
-
 form{
- 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color:#f5eede;
   border: 2px solid #0000007b;
   width: 80%;
   margin: 95px auto 30px auto;
   border-radius: 7px;
- 
 }
 
-fieldset{
-  
+fieldset{  
   border: none;
   padding: 20px;
 }
@@ -958,11 +939,7 @@ input[type="date"] {
     background: none;
 }
 
-
 /*--------materias---------*/
-
-
-
 
  .titulo{
     font-weight:bold;
@@ -980,6 +957,9 @@ width: 70%;
   width: 70%; 
   font-weight:bold;
   text-align: justify;
+}
+.bigbanner{
+    width: 100%;
 }
 
 .corpo
@@ -1034,6 +1014,7 @@ a{
    max-height: 100%;
    max-width: 35%;
     object-fit: contain;
+    margin-block: 10px;
 }
 .alinharvejamais div{
     max-width: 55%;
