@@ -3,7 +3,7 @@ function responsivonav(){
         const nav = document.getElementById('navmain');
         let width = window.innerWidth;
 
-        if (width <= 768) {
+        if (width <= 900) {
             nav.innerHTML = `<div class="nav-container">
       <input class="checkbox" type="checkbox">
 

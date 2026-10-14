@@ -22,126 +22,7 @@
 
 /* ================= CELULARES ================= */
 
-@media (max-width: 768px){
 
-    .header1{
-        left: 70px;
-        top: 18px;
-        font-size: 40px;
-    }
-
-    .peixe{
-        right: 15px;
-    }
-    #sobre{
-        margin: 0px;
-        width: 100%;
-    }
-
-    h1{
-        color: #f5eede;
-        font-size: 2rem;
-
-        text-align: center;
-    }
-
-    section a{
-        font-size: 1.2rem;
-        margin-right: 0;
-        text-align: center;
-        padding: 0 15px;
-    }
-    .lead{
-        width: 80%!important;
-    }
-    .corpo{
-        width: 80%!important;
-        font-size:1.5rem!important ;
-    }
-    .titulo{
-        width: 80%!important;
-    }
-    p{
-        font-size: 1.1rem;
-        padding: 0 15px;
-    }
-
-    .footer-container{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .footer-section{
-        min-width: auto;
-    }
-
-    .menu-items{
-        width: 220px;
-    }
-
-    .anterior,
-    .proximo{
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    .botao-pix{
-        font-size: 1.5rem;
-        width: 100px;
-    }
-}
-
-/* ================= CARROSSEL DE CARDS ================= */
-
-@media (max-width: 768px){
-
-    .card{
-        flex: 0 0 220px;
-        width: 220px;
-        height: 180px;
-    }
-
-    .group{
-        gap: 10px;
-    }
-}
-
-/* ================= CELULARES PEQUENOS ================= */
-
-@media (max-width: 480px){
-
-    .header1{
-        font-size: 1rem;
-    }
-
-    .navbar .menu-items{
-        width: 180px;
-        padding-left: 15px;
-    }
-
-.menu-items a{
-    font-size: 60px;
-}
-
-    .navbar .menu-items li{
-        font-size: 1rem;
-    }
-
-    section a{
-        font-size: 1rem;
-    }
-
-    .card{
-        flex: 0 0 180px;
-        width: 180px;
-        height: 140px;
-    }
-
-    h1{
-        font-size: 1.7rem;
-    }
-}
 
 
 
@@ -985,10 +866,21 @@ a{
 .alinharvejamais{
     display: flex;
     justify-content: left ;
-    margin-top: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 15px;
     width: 70%;
     gap: 50px;
      margin-left: 180px;
+    min-height: 200px;
+}
+.alinharvejamais img{
+   max-height: 100%;
+    object-fit: contain;
+}
+.alinharvejamais div{
+    max-width: 55%;
 }
 
 .outros{
@@ -1002,12 +894,15 @@ a{
   font-size: 1.7rem; 
   font-weight:bold;
     font-family: Hfont;
+    width: 100%;
+    max-width: 100%!important;
 }
 
 .lead3{
     font-family: magra;
 font-size: 1.5rem;
-width: 100%; 
+width: 100%;
+max-width: 100%!important;
 }
 
 .leadfoda{
@@ -1042,4 +937,131 @@ border-radius: 20%;
 audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display {
 color: var(--branco);
+}
+@media (max-width: 900px){
+
+    .header1{
+        left: 70px;
+        top: 18px;
+        font-size: 40px;
+    }
+
+    .peixe{
+        right: 15px;
+    }
+    #sobre{
+        margin: 0px;
+        width: 100%;
+    }
+
+    h1{
+        color: #f5eede;
+        font-size: 2rem;
+
+        text-align: center;
+    }
+
+    section a{
+        font-size: 1.2rem;
+        margin-right: 0;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .lead{
+        width: 80%!important;
+    }
+    .corpo{
+        width: 80%!important;
+        font-size:1.5rem!important ;
+    }
+    .titulo{
+        width: 80%!important;
+    }
+    p{
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-section{
+        min-width: auto;
+    }
+
+    .menu-items{
+        width: 220px;
+    }
+
+    .anterior,
+    .proximo{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .botao-pix{
+        font-size: 1.5rem;
+        width: 100px;
+    }
+    .alinharvejamais{
+align-items: center;
+justify-content: center;
+margin-right: 0;
+margin-left: 0;
+
+    }
+}
+
+/* ================= CARROSSEL DE CARDS ================= */
+
+@media (max-width: 900px){
+
+    .card{
+        flex: 0 0 220px;
+        width: 220px;
+        height: 180px;
+    }
+
+    .group{
+        gap: 10px;
+    }
+}
+
+/* ================= CELULARES PEQUENOS ================= */
+
+@media (max-width: 480px){
+
+    .header1{
+        font-size: 1rem;
+    }
+
+    .navbar .menu-items{
+        width: 180px;
+        padding-left: 15px;
+    }
+
+.menu-items a{
+    font-size: 60px;
+}
+
+    .navbar .menu-items li{
+        font-size: 1rem;
+    }
+
+    section a{
+        font-size: 1rem;
+    }
+
+    .card{
+        flex: 0 0 180px;
+        width: 180px;
+        height: 140px;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
 }
