@@ -99,20 +99,23 @@ width: 100%;
 text-align: left;
 gap: 20px;
     }
-    .alinharvejamais div .alinharvejamais div{
-        max-width: 80%;
+    .alinharvejamais div.alinharvejamais div{
+        max-width: 80%!important;
     }
-    .alinharvejamais img .alinharvejamais img{
-        max-width: 60%;
+    .alinharvejamais img{
+        max-width: 60%!important;
     }
     .lead2.lead2{
         font-size: 1.5rem;
-        text-align: center;
+        text-align: left;
     }
     .lead3.lead3{
         margin-top: 15px;
         font-size: 1.3rem;
-        text-align: justify;
+        text-align: left;
+    }
+    .cardmemoria.cardmemoria{
+        
     }
 }
 
