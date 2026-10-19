@@ -996,6 +996,9 @@ width: 70%;
     color: #f5eede;
     background-color: #17597c;
 }
+.dark .animal{
+    color: var(--azulclaro);
+}
 hr{
 border: 1.5px solid #8b877e;
  width: 90%;
