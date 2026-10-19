@@ -16,12 +16,19 @@ function responsivonav(){
 
          <div class="menu-itemsb">
         <li><a href="index.html">Ínicio</a></li>
+        <hr class="menusplit">
         <li><a href="materias.html">Conteúdos</a></li>
+        <hr class="menusplit">
         <li><a href="index.html#sobre">Sobre</a></li>
+        <hr class="menusplit">
         <li><a href="equipe.html">Equipe</a></li>
+        <hr class="menusplit">
         <li><a href="form.html">Participe</a></li>
+        <hr class="menusplit">
         <li><a href="#contato">Contatos</a></li>
+        <hr class="menusplit">
         <li><a href="doe.html">Doe</a></li>
+        <hr class="menusplit">
         <li><a href="memoria.html">Jogo da Memória</a></li>
       </div>
 
