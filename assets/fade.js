@@ -3,7 +3,7 @@ function mover(){
     fade(500,1,"fadeover");
 clearInterval(interval);
     setTimeout(() => {
-    document.getElementById("imgs").src = `imagens/peixe`+pos+`.png`;
+    document.getElementById("imgs").src = `assets/imagens/peixe`+pos+`.png`;
     document.getElementById("catia").href =`materia`+pos+`.html`;
     fade(500,0,"fadeover");
 }, 700);

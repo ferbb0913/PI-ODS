@@ -51,7 +51,7 @@ function responsivonav(){
         <div class="menu-items"><a href="memoria.html">Jogo da Memória</a></div>
     </div>
     <div class="peixe">
-        <img onclick="toggle()" src="imagens/peixe.png" style="height: 100%;";>
+        <img onclick="toggle()" src="assets/imagens/peixe.png" style="height: 100%;";>
       </div>`
         }
 }
