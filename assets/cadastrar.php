@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
 $usuario = "root";
-$senha = "123";
+$senha = "";
 $banco = "sistema_login";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
@@ -17,15 +17,15 @@ if (!$conexao) {
     $nasc = $_POST["nasc"];
     $city = $_POST["city"];
 
-    $busca = mysqli_query($conexao, "SELECT * FROM usuarios WHERE email = '$email'");
+    $busca = mysqli_query($conexao, "SELECT * FROM formulario WHERE email = '$email'");
     $linhas = mysqli_num_rows($busca);
 
     if ($linhas > 0){
-        echo "Email já cadastrado.";
+        echo "<script>console.log('Email já cadastrado.')</script>";
     }
     else{
-        mysqli_query($conexao, "INSERT INTO usuarios (nome, fone,email,nasc,city) VALUES ('cum', '$fone','$email','$nasc','$city')");
-        echo "Cadastrado com sucesso!";
+        mysqli_query($conexao, "INSERT INTO formulario (nome, fone,email,nasc,city) VALUES ('$nome', '$fone','$email','$nasc','$city')");
+        echo "<script>console.log('concluido')</script>";
     }
 ?>
 
