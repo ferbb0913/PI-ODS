@@ -36,7 +36,7 @@ function responsivonav(){
     <div class="burgernavalign">
      <div class="header1"><p>SeaWorld</p></div>
     <div class="peixe">
-        <img onclick="toggle()" src="imagens/peixe.png" style="height: 100%;";>
+        <img onclick="toggle()" src="assets/imagens/peixe.png" style="height: 100%;";>
       </div>
       </div>`;
         } else{
