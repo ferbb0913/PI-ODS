@@ -9,11 +9,11 @@
 }
 @font-face {
   font-family: Hfont;
-  src: url(fontcool/tropical.ttf);
+  src: url(./fontcool/tropical.ttf);
 }
 @font-face {
   font-family: gorda;
-  src: url(fontcool/gorda.otf);
+  src: url(.fontcool/gorda.otf);
 }
 @font-face {
   font-family: magra;
