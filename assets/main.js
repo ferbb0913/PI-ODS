@@ -95,3 +95,8 @@ document.body.classList.toggle("dark");
 
         }
 
+        window.addEventListener("beforeunload", function(){
+          alert("hello?")
+          document.getElementById("trans").transform="translate("+document.getElementById("trans").offset().top-window.innerHeight+"px)"
+        })
+

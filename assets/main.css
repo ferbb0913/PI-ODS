@@ -1071,6 +1071,23 @@ max-width: 100%!important;
 .leadfoda{
     width: 70%;
 }
+.tcont{
+position: sticky;
+top: 0;
+}
+.trans{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+    position: absolute;
+}
+.tblock{
+    height: 20%;
+    width: 100%;
+    transition:0.5,2 cubic-bezier(1,0,1,0);
+}
 
 /*---------som-----------*/
 
