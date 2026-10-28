@@ -239,7 +239,7 @@ opacity: 0;
 background-color: var(--preto);
 }
 .navbar{
-  z-index: 999;
+  z-index: 98;
   position: sticky;
   top: 0px;
   width: 100%;
@@ -1074,6 +1074,7 @@ max-width: 100%!important;
 .tcont{
 position: sticky;
 top: 0;
+z-index: 99;
 }
 .trans{
     display: flex;
@@ -1082,11 +1083,16 @@ top: 0;
     height: 100vh;
     flex: 1;
     position: absolute;
+    pointer-events: none;
 }
 .tblock{
     height: 20%;
     width: 100%;
-    transition:0.5,2 cubic-bezier(1,0,1,0);
+    transition-timing-function:cubic-bezier(1,0.15,0.5,0.5) ;
+    transition-duration:1s ;
+    transform: translate(0px,0px);
+    z-index: 99;
+    pointer-events: all;
 }
 
 /*---------som-----------*/

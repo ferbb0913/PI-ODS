@@ -95,8 +95,21 @@ document.body.classList.toggle("dark");
 
         }
 
-        window.addEventListener("beforeunload", function(){
-          alert("hello?")
-          document.getElementById("trans").transform="translate("+document.getElementById("trans").offset().top-window.innerHeight+"px)"
-        })
+function ultrans(href){
+         document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
+    child.style.transform="translate(0px,-"+window.innerHeight+"px)"
+  })
+            setTimeout(()=>{
+window.location.href = href
+          },500)
+}
+function ltrans(){
+  document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
+    child.style.transform="translate(0px,-"+((child.offsetTop)+(20 * (window.innerHeight / 100)))+"px)"
+    console.log(child.offsetTop)
+  })
+  
+}
+ltrans()
+
 
