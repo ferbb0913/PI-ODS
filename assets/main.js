@@ -97,11 +97,11 @@ document.body.classList.toggle("dark");
 
 function ultrans(href){
          document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
-child.style.transform="translate(0px,"+((child.offsetTop)+(20 * (window.innerHeight / 100)))+"px)"
+child.style.transform="translate(0px,0px)"
   })
             setTimeout(()=>{
 window.location.href = href
-          },500)
+          },1500)
 }
 function ltrans(){
   document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
