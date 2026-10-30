@@ -6,16 +6,14 @@ $banco = "sistema_login";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 
-// if (!$conexao) {
-//     echo "<script>console.log('asdasd')</script>"
-//     die("Falha na conexão: " ; mysqli_connect_error());
-// }
+if (!$conexao) {
+ exit( mysqli_connect_error());
+}
     $nome = $_POST["nome"];
     $fone = $_POST["fone"];
     $email = $_POST["email"];
     $nasc = $_POST["nasc"];
     $city = $_POST["city"];
-    
 
     $busca = mysqli_query($conexao, "SELECT * FROM formulario WHERE email = '$email'");
     $linhas = mysqli_num_rows($busca);
