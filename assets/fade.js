@@ -12,14 +12,15 @@ interval=setInterval(avancar, 5000);
 
 function fade(ftime,fop,id){
     let count = 0;
-let opadd = (fop - Number(document.getElementById(id).style.opacity))/20;
+let opadd = (fop - Number(document.getElementById(id).style.opacity))/50;
  let interval2 = setInterval(() => {
 document.getElementById(id).style.opacity = opadd+Number(document.getElementById(id).style.opacity);
 count++;
-if(count == 20){
+
+if(count == 50){
     clearInterval(interval2)
 }
-}, ftime/20);
+}, ftime/50);
 }
 
 function avancar(){

@@ -42,13 +42,13 @@ function responsivonav(){
         } else{
             nav.innerHTML = `<div class="header1"><p>SeaWorld</p></div>
         <div style="display: flex; width:50%; margin-inline: auto;">
-        <div class="menu-items"><a href="index.html #sobre">Ínicio</a></div>
-        <div class="menu-items"><a href="materias.html">Conteúdos</a></div>
-        <div class="menu-items"><a href="equipe.html">Equipe</a></div>
-        <div class="menu-items"><a href="form.html">Participe</a></div>
+        <div class="menu-items"><a onclick="ultrans('index.html #sobre')">Ínicio</a></div>
+        <div class="menu-items"><a onclick="ultrans('materias.html')">Conteúdos</a></div>
+        <div class="menu-items"><a onclick="ultrans('equipe.html')">Equipe</a></div>
+        <div class="menu-items"><a onclick="ultrans('form.html')">Participe</a></div>
         <div class="menu-items"><a href="#contato">Contatos</a></div>
-        <div class="menu-items"><a href="doe.html">Doe</a></div>
-        <div class="menu-items"><a href="memoria.html">Jogo da Memória</a></div>
+        <div class="menu-items"><a onclick="ultrans('doe.html')">Doe</a></div>
+        <div class="menu-items"><a onclick="ultrans('memoria.html')">Jogo da Memória</a></div>
     </div>
     <div class="peixe">
         <img onclick="toggle()" src="assets/imagens/peixe.png" style="height: 100%;";>
@@ -94,4 +94,21 @@ document.body.classList.toggle("dark");
             }
 
         }
+
+function ultrans(href){
+         document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
+child.style.transform="translate(0px,"+((child.offsetTop)+(20 * (window.innerHeight / 100)))+"px)"
+  })
+            setTimeout(()=>{
+window.location.href = href
+          },500)
+}
+function ltrans(){
+  document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
+    child.style.transform="translate(0px,-"+((child.offsetTop)+(20 * (window.innerHeight / 100)))+"px)"
+  })
+  
+}
+ltrans()
+
 
