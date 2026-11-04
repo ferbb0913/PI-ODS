@@ -15,11 +15,10 @@ function responsivonav(){
 
 
          <div class="menu-itemsb">
-        <li><a href="index.html">Ínicio</a></li>
+        <li><a onclick="ultrans('index.html #sobre')">Ínicio</a></li>
         <hr class="menusplit">
-        <li><a href="materias.html">Conteúdos</a></li>
+        <li><a onclick="ultrans('materias.html')"">Conteúdos</a></li>
         <hr class="menusplit">
-        <li><a href="index.html#sobre">Sobre</a></li>
         <hr class="menusplit">
         <li><a href="equipe.html">Equipe</a></li>
         <hr class="menusplit">
