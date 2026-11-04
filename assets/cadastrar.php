@@ -14,6 +14,8 @@ if (!$conexao) {
     $email = $_POST["email"];
     $nasc = $_POST["nasc"];
     $city = $_POST["city"];
+    $pass = $_POST["pass"];
+    $senhah = hash('sha256', $pass);
 
     $busca = mysqli_query($conexao, "SELECT * FROM formulario WHERE email = '$email'");
     $linhas = mysqli_num_rows($busca);
@@ -22,7 +24,7 @@ if (!$conexao) {
         echo "<script>console.log('Email já cadastrado.')</script>";
     }
     else{
-        mysqli_query($conexao, "INSERT INTO formulario (nome, fone,email,dtnasc,cidade) VALUES ('$nome', '$fone','$email','$nasc','$city')");
+        mysqli_query($conexao, "INSERT INTO formulario (nome, fone,email,dtnasc,cidade,senhah) VALUES ('$nome', '$fone','$email','$nasc','$city','$senhah')");
         echo "<script>console.log('concluido')</script>";
     }
 ?>
