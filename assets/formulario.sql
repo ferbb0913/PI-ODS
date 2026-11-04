@@ -32,6 +32,8 @@ CREATE TABLE `formulario` (
   `nome` varchar(30) DEFAULT NULL,
   `email` varchar(110) DEFAULT NULL,
   `telefone` varchar(15) DEFAULT NULL,
+  `dtnasc` date DEFAULT NULL,
+  `cidade` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`idform`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 --

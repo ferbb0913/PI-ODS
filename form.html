@@ -7,14 +7,22 @@
 </head>
 <link rel="stylesheet" href="assets/main.css">
 <body>
-
+<div class="tcont">
+    <div class="trans">
+        <div class="tblock" style="background-color:#16587B;"></div>
+        <div class="tblock" style="background-color: #5a849c;"></div>
+        <div class="tblock" style="background-color: #84B3CE;"></div>
+        <div class="tblock" style="background-color: #ccd3c9;"></div>
+        <div class="tblock" style="background-color:#F5EEDD;"></div>
+    </div>
+</div>
       <nav>
 
 <div class="carrossel">
 
     <div class="imgs">
 
-        <div class="slide" >
+         <div class="slide" >
             <div id="fadeover"></div>
             <a id="catia" href = "materia1.html">
             <img src="assets/imagens/peixe1.png" id="imgs">
@@ -36,17 +44,16 @@
     </div>
 
    <div class="form">
-  <form>
+  <form method="post" action="http://localhost/cadastrar.php">
  <fieldset>
     <h1>Cadastre-se</h1>
     <br>
 
-     <form action="assets/formsalvar.php" method="POST"></form>
 <label for="nome">Nome:
  <input type="text" name="nome" > 
  </label> 
  <br><br>
- <label for="senha">Telefone:
+ <label for="fone">Telefone:
  <input type="number" name="fone" >
  </label>     
  <br><br>
@@ -55,7 +62,10 @@
   </label>
  <br><br>
 <label for="nasc">Data de nascimento:
- <input type="number" name="nasc" >
+ <input type="date" name="nasc" >
+  <br><br>
+<label for="city">Cidade:
+ <input type="text" name="city">
 
 
 </label>
@@ -97,16 +107,6 @@
     <p>© 2026 SeaWorld - Todos os direitos reservados</p>
   </div>
 </footer>
-
-
-
-
-
-
-
-
-
-
 
 
      <script src="assets/main.js"></script>
