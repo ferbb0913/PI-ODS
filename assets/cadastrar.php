@@ -22,12 +22,13 @@ if (!$conexao) {
 
     if ($linhas > 0){
         echo "<script>console.log('Email já cadastrado.')</script>";
-        echo "<script>window.location.href='form.html'</script>";
+        echo "<script>window.location.href='../form.html'</script>";
     }
     else{
         mysqli_query($conexao, "INSERT INTO formulario (nome, fone,email,dtnasc,cidade,senhah) VALUES ('$nome', '$fone','$email','$nasc','$city','$senhah')");
         echo `<script>console.log('concluido') </script>`;
-        echo "<script>window.location.href='form.html'</script>";
+        echo "<script>window.location.href='../form.html'</script>";
     }
 ?>
+
 
