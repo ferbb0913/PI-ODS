@@ -19,16 +19,15 @@ function responsivonav(){
         <hr class="menusplit">
         <li><a onclick="ultrans('materias.html')"">Conteúdos</a></li>
         <hr class="menusplit">
+        <li><a onclick="ultrans('equipe.html')">Equipe</a></li>
         <hr class="menusplit">
-        <li><a href="equipe.html">Equipe</a></li>
-        <hr class="menusplit">
-        <li><a href="form.html">Participe</a></li>
+        <li><a onclick="ultrans('form.html')">Participe</a></li>
         <hr class="menusplit">
         <li><a href="#contato">Contatos</a></li>
         <hr class="menusplit">
-        <li><a href="doe.html">Doe</a></li>
+        <li><a onclick="ultrans('doe.html')">Doe</a></li>
         <hr class="menusplit">
-        <li><a href="memoria.html">Jogo da Memória</a></li>
+        <li><a onclick="ultrans('memoria.html')">Jogo da Memória</a></li>
       </div>
 
     </div>
