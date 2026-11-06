@@ -95,7 +95,6 @@ document.body.classList.toggle("dark");
 
 function ultrans(href){
   document.querySelector('.trans').style.opacity = "1"
-  document.querySelector('.trans').style.pointerEvents = "all"
          document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
 child.style.transform="translate(0px,0px)"
   })
@@ -109,7 +108,6 @@ function ltrans(){
   })
   setTimeout(()=>{
 document.querySelector('.trans').style.opacity = "0"
-document.querySelector('.trans').style.pointerEvents = "none"
           },1200)
 }
 ltrans()

@@ -12,6 +12,7 @@ if (!$conexao) {
 
 $email = $_POST['email'];
 $senha = $_POST['pass'];
+    $senhah = hash('sha256', $senha);
 
 $busca = mysqli_query($conexao, "SELECT * FROM formulario WHERE email = '$email'");
 $linha = mysqli_num_rows($busca);
@@ -19,16 +20,16 @@ $linha = mysqli_num_rows($busca);
 if($linha > 0) {
     $dados = mysqli_fetch_assoc($busca);
 
-    if(password_verify($senha, $dados['senhah'])) {
+    if(password_verify($senhah, $dados['senhah'])) {
         echo "Logado com sucesso, Bem vindo!";
-        echo "<script>window.location.href='/index.html'</script>"
+        echo "<script>window.location.href='../index.html'</script>";
     } else {
         echo "Senha incorreta.";
-        echo "<script>window.location.href='/login.html'</script>"
+        echo "<script>window.location.href='../login.html'</script>";
     }
 } else {
     echo "Usuário não encontrado.";
-     echo "<script>window.location.href='/login.html'</script>"
-}
+     echo "<script>window.location.href='../login.html'</script>";
+};
 ?>
 

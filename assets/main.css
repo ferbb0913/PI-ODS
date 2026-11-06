@@ -1110,7 +1110,7 @@ z-index: 99;
     transition-duration:1s ;
     transform: translate(0px,0px);
     z-index: 99;
-    pointer-events: all;
+    pointer-events: none;
 }
 
 /*---------som-----------*/
