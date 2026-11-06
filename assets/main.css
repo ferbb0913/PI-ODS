@@ -459,6 +459,7 @@ width: 80%;
   margin-top: 0;
   display: flex;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .slide{
@@ -1037,6 +1038,7 @@ border: 1.5px solid #8b877e;
 a{
     color: #0d3347;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .alinharvejamais{

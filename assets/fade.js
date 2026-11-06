@@ -1,10 +1,10 @@
 let pos = 1;
+document.getElementById("catia").addEventListener("click",function() {ultrans("materia"+pos+".html")})
 function mover(){
     fade(500,1,"fadeover");
 clearInterval(interval);
     setTimeout(() => {
     document.getElementById("imgs").src = `assets/imagens/peixe`+pos+`.png`;
-    document.getElementById("catia").href =`materia`+pos+`.html`;
     fade(500,0,"fadeover");
 }, 700);
 interval=setInterval(avancar, 5000);
