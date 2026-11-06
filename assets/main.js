@@ -94,6 +94,8 @@ document.body.classList.toggle("dark");
         }
 
 function ultrans(href){
+  document.querySelector('.trans').style.opacity = "1"
+  document.querySelector('.trans').style.pointerEvents = "all"
          document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
 child.style.transform="translate(0px,0px)"
   })
@@ -105,7 +107,10 @@ function ltrans(){
   document.querySelector('.trans').querySelectorAll('.tblock').forEach(child => {
     child.style.transform="translate(0px,-"+((child.offsetTop)+(20 * (window.innerHeight / 100)))+"px)"
   })
-  
+  setTimeout(()=>{
+document.querySelector('.trans').style.opacity = "0"
+document.querySelector('.trans').style.pointerEvents = "none"
+          },1200)
 }
 ltrans()
 
