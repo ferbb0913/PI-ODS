@@ -41,10 +41,6 @@ CREATE TABLE `formulario` (
 -- Despejando dados para a tabela `formulario`
 --
 
-INSERT INTO `formulario` (`iDuser`, `nome`, `fone`, `email`, `dtnasc`, `cidade`, `senhah`) VALUES
-(2, 'Fernando Boing Barni', 123123123, 'fernando61154986@alunos.sc.senac.br', '2026-11-13', 'vidal ramos', '8aabb9a0c0fcb5aac4ae5c81df1315b2a91baf8f6f97f310c0f39c9d38cc4d17'),
-(3, 'Fernando Boing Barni', 123123123, 'fernando61154986@alunos.sc.senacvr', '2026-11-13', 'vidal ramos', '8aabb9a0c0fcb5aac4ae5c81df1315b2a91baf8f6f97f310c0f39c9d38cc4d17');
-
 --
 -- Índices para tabelas despejadas
 --
