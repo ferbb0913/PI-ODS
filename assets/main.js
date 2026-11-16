@@ -109,5 +109,3 @@ function ltrans(){
   
 }
 ltrans()
-
-
